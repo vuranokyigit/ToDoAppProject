@@ -93,10 +93,17 @@
 		<!--Database-->
 		<!--h2DB-->
 		<dependency>
+			<groupId>io.r2dbc</groupId>
+			<artifactId>r2dbc-spi</artifactId>
+			<version>${r2dbc-spi.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
+			<version>${h2.version}</version>
 		</dependency>
+
+
 
 		<!--Mysql-->
 		<dependency>
@@ -117,21 +124,6 @@
 			<artifactId>r2dbc-postgresql</artifactId>
 			<version>1.0.1.RELEASE</version>
 		</dependency>
-
-
-
-		<!--Mongo DB Kalıcı veri-->
-		<!--<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        </dependency>-->
-
-		<!--Mongo DB Embedded Test icin -->
-		<!--<dependency>
-            <groupId>de.flapdoodle.embed</groupId>
-            <artifactId>de.flapdoodle.embed.mongo</artifactId>
-            <scope>test</scope>
-        </dependency>-->
 
 		<!--security-->
 		<dependency>
@@ -204,73 +196,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>-->
-
-		<!-- jackson: XML -->
-		<!-- <dependency>
-             <groupId>com.fasterxml.jackson.dataformat</groupId>
-             <artifactId>jackson-dataformat-xml</artifactId>
-         </dependency>
-            -->
-
-		<!--SHA dependecy-->
-		<!--<dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>20.0</version>
-        </dependency>-->
-
-		<!--  Prometheus: Prometheus için gerekli olacak -->
-		<!-- Prometheus:System %of Memoryconsumption ,of CPU consumption -->
-		<!--  <dependency>
-              <groupId>io.micrometer</groupId>
-              <artifactId>micrometer-registry-prometheus</artifactId>
-              <scope>runtime</scope>
-          </dependency>-->
-
-		<!-- web jar Bootstrap-->
-		<!--<dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>bootstrap</artifactId>
-            <version>3.3.7-1</version>
-        </dependency>-->
-
-		<!-- web jar jquery-->
-		<!-- <dependency>
-             <groupId>org.webjars</groupId>
-             <artifactId>jquery</artifactId>
-             <version>3.3.1-1</version>
-         </dependency>-->
-
-		<!--aop-->
-		<!-- <dependency>
-             <groupId>org.springframework.boot</groupId>
-             <artifactId>spring-boot-starter-aop</artifactId>
-         </dependency>-->
-
-		<!--redis-->
-		<!--  <dependency>
-              <groupId>org.springframework.boot</groupId>
-              <artifactId>spring-boot-starter-data-redis</artifactId>
-              <version>2.7.0</version>
-          </dependency>
-          <dependency>
-              <groupId>redis.clients</groupId>
-              <artifactId>jedis</artifactId>
-          </dependency>-->
-
-		<!--other libraries-->
-		<!--grapQL: Dikkat: graphql ve graphiql aynı sürüm olmalıdır.-->
-		<!--   <dependency>
-               <groupId>com.graphql-java</groupId>
-               <artifactId>graphql-spring-boot-starter</artifactId>
-               <version>5.0.2</version>
-           </dependency>
-
-           <dependency>
-               <groupId>com.graphql-java</groupId>
-               <artifactId>graphql-java-tools</artifactId>
-               <version>5.2.4</version>
-           </dependency>-->
 	</dependencies>
 
 	<build>
@@ -282,14 +207,14 @@
 				<version>3.0.2</version>
 			</plugin>
 
-			<!-- for maven target 17 -->
+			<!-- for maven target 20 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 				<configuration>
-					<source>17</source>
-					<target>17</target>
+					<source>20</source>
+					<target>20</target>
 				</configuration>
 			</plugin>
 
