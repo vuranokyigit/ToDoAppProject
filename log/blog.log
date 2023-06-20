@@ -20,7 +20,7 @@
 2023-06-20T00:28:24.266+03:00  INFO 35146 --- [restartedMain] T.ToDoAppProjectApplication              : Started ToDoAppProjectApplication in 2.773 seconds (process running for 3.407)
 2023-06-20T00:29:08.162+03:00  INFO 35164 --- [restartedMain] T.ToDoAppProjectApplication              : Starting ToDoAppProjectApplication using Java 20.0.1 with PID 35164 (/Users/fikriyigitvuranok/Downloads/ToDoAppProject/target/classes started by fikriyigitvuranok in /Users/fikriyigitvuranok/Downloads/ToDoAppProject)
 2023-06-20T00:29:08.164+03:00  INFO 35164 --- [restartedMain] T.ToDoAppProjectApplication              : No active profile set, falling back to 1 default profile: "default"
-2023-06-20T00:29:08.165+03:00 DEBUG 35164 --- [restartedMain] o.s.boot.SpringApplication               : Loading source class TechCarrerFYV.ToDoAppProjectApplication
+2023-06-20T00:29:08.165+03:00 DEBUG 35164 --- [restartedMain] o.s.boot.SpringApplication               : Loading source class TechCareerFYV.ToDoAppProjectApplication
 2023-06-20T00:29:08.203+03:00 DEBUG 35164 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : Matching URLs for reloading : [file:/Users/fikriyigitvuranok/Downloads/ToDoAppProject/target/classes/]
 2023-06-20T00:29:08.204+03:00 DEBUG 35164 --- [restartedMain] o.s.b.d.settings.DevToolsSettings        : Included patterns for restart : []
 2023-06-20T00:29:08.204+03:00 DEBUG 35164 --- [restartedMain] o.s.b.d.settings.DevToolsSettings        : Excluded patterns for restart : [/spring-boot-starter-[\w-]+/, /spring-boot/(bin|build|out)/, /spring-boot-starter/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/, /spring-boot-actuator/(bin|build|out)/, /spring-boot-autoconfigure/(bin|build|out)/]
@@ -29,7 +29,7 @@
 2023-06-20T00:29:08.205+03:00 DEBUG 35164 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f7410c1
 2023-06-20T00:29:08.748+03:00  INFO 35164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
 2023-06-20T00:29:08.750+03:00  INFO 35164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
-2023-06-20T00:29:08.765+03:00 DEBUG 35164 --- [restartedMain] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'TechCarrerFYV'. Automatic @Repository and @Entity scanning is enabled.
+2023-06-20T00:29:08.765+03:00 DEBUG 35164 --- [restartedMain] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'TechCareerFYV'. Automatic @Repository and @Entity scanning is enabled.
 2023-06-20T00:29:08.767+03:00  INFO 35164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 R2DBC repository interfaces.
 2023-06-20T00:29:09.387+03:00 DEBUG 35164 --- [restartedMain] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: /Users/fikriyigitvuranok/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar
 2023-06-20T00:29:09.387+03:00 DEBUG 35164 --- [restartedMain] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: /Users/fikriyigitvuranok/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar
@@ -1155,7 +1155,7 @@ Unconditional classes:
 2023-06-20T00:29:10.422+03:00 DEBUG 35164 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
 2023-06-20T00:29:10.423+03:00 DEBUG 35164 --- [restartedMain] o.s.boot.devtools.restart.Restarter      : Creating new Restarter for thread Thread[#1,main,5,main]
 2023-06-20T00:29:10.423+03:00 DEBUG 35164 --- [restartedMain] o.s.boot.devtools.restart.Restarter      : Immediately restarting application
-2023-06-20T00:29:10.423+03:00 DEBUG 35164 --- [restartedMain] o.s.boot.devtools.restart.Restarter      : Starting application TechCarrerFYV.ToDoAppProjectApplication with URLs [file:/Users/fikriyigitvuranok/Downloads/ToDoAppProject/target/classes/]
+2023-06-20T00:29:10.423+03:00 DEBUG 35164 --- [restartedMain] o.s.boot.devtools.restart.Restarter      : Starting application TechCareerFYV.ToDoAppProjectApplication with URLs [file:/Users/fikriyigitvuranok/Downloads/ToDoAppProject/target/classes/]
 2023-06-20T00:29:10.423+03:00 DEBUG 35164 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
 2023-06-20T00:29:27.459+03:00 DEBUG 35164 --- [SpringApplicationShutdownHook] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
 2023-06-20T00:29:27.460+03:00 DEBUG 35164 --- [SpringApplicationShutdownHook] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f7410c1, started on Tue Jun 20 00:29:08 TRT 2023
@@ -1279,3 +1279,363 @@ Unconditional classes:
 2023-06-20T00:46:56.458+03:00  INFO 35560 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2023-06-20T00:46:56.482+03:00  INFO 35560 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3333 (http) with context path ''
 2023-06-20T00:46:56.490+03:00  INFO 35560 --- [restartedMain] T.ToDoAppProjectApplication              : Started ToDoAppProjectApplication in 2.649 seconds (process running for 3.256)
+2023-06-20T09:18:47.189+03:00  INFO 39632 --- [restartedMain] T.ToDoAppProjectApplication              : Starting ToDoAppProjectApplication using Java 20.0.1 with PID 39632 (/Users/fikriyigitvuranok/Downloads/ToDoAppProject/target/classes started by fikriyigitvuranok in /Users/fikriyigitvuranok/Downloads/ToDoAppProject)
+2023-06-20T09:18:47.191+03:00  INFO 39632 --- [restartedMain] T.ToDoAppProjectApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-20T09:18:47.238+03:00  INFO 39632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-20T09:18:47.238+03:00  INFO 39632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-20T09:18:49.125+03:00  INFO 39632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3333 (http)
+2023-06-20T09:18:49.135+03:00  INFO 39632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-20T09:18:49.135+03:00  INFO 39632 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-20T09:18:49.195+03:00  INFO 39632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-20T09:18:49.196+03:00  INFO 39632 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1957 ms
+2023-06-20T09:18:49.338+03:00 DEBUG 39632 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-06-20T09:18:49.338+03:00 DEBUG 39632 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-06-20T09:18:49.777+03:00 DEBUG 39632 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-06-20T09:18:49.906+03:00 DEBUG 39632 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2023-06-20T09:18:50.311+03:00 DEBUG 39632 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-06-20T09:18:50.321+03:00 DEBUG 39632 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-06-20T09:18:50.373+03:00  WARN 39632 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-20T09:18:50.930+03:00  INFO 39632 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-20T09:18:50.938+03:00  INFO 39632 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@156bcbe6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56793df2, org.springframework.security.web.context.SecurityContextHolderFilter@f8e2ba8, org.springframework.security.web.header.HeaderWriterFilter@30403be6, org.springframework.web.filter.CorsFilter@27802ec0, org.springframework.security.web.csrf.CsrfFilter@6de016b5, org.springframework.security.web.authentication.logout.LogoutFilter@2e40a6bf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1eac990a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@62b5c960, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@50c9a8f8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@297d558c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5228d85, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54505f00, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b367dfc, org.springframework.security.web.access.ExceptionTranslationFilter@2c5af535, org.springframework.security.web.access.intercept.AuthorizationFilter@fdf6a6e]
+2023-06-20T09:18:50.981+03:00  INFO 39632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-20T09:18:51.037+03:00  INFO 39632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3333 (http) with context path ''
+2023-06-20T09:18:51.053+03:00  INFO 39632 --- [restartedMain] T.ToDoAppProjectApplication              : Started ToDoAppProjectApplication in 4.315 seconds (process running for 5.328)
+2023-06-20T09:18:51.464+03:00  INFO 39632 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-20T09:18:51.464+03:00  INFO 39632 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-20T09:18:51.464+03:00 DEBUG 39632 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-06-20T09:18:51.464+03:00 DEBUG 39632 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-06-20T09:18:51.464+03:00 DEBUG 39632 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-06-20T09:18:51.465+03:00 DEBUG 39632 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@340d3ef6
+2023-06-20T09:18:51.466+03:00 DEBUG 39632 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4f3cc8cd
+2023-06-20T09:18:51.466+03:00 DEBUG 39632 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-06-20T09:18:51.466+03:00  INFO 39632 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-06-20T09:18:51.922+03:00  WARN 39632 --- [reactor-tcp-nio-1] s.b.a.r.ConnectionFactoryHealthIndicator : Health check failed
+
+io.r2dbc.postgresql.ExceptionFactory$PostgresqlAuthenticationFailure: role "vuranok" is not permitted to log in
+	at io.r2dbc.postgresql.ExceptionFactory.createException(ExceptionFactory.java:86) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.ExceptionFactory.createException(ExceptionFactory.java:65) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.ExceptionFactory.handleErrorResponse(ExceptionFactory.java:132) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:112) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxHandle$HandleConditionalSubscriber.onNext(FluxHandle.java:342) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.drain(FluxCreate.java:814) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.next(FluxCreate.java:739) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxCreate$SerializedFluxSink.next(FluxCreate.java:161) ~[reactor-core-3.5.6.jar:3.5.6]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$Conversation.emit(ReactorNettyClient.java:687) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.emit(ReactorNettyClient.java:939) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:813) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:719) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:128) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:292) ~[reactor-netty-core-1.1.7.jar:1.1.7]
+	at reactor.netty.channel.FluxReceive.onInboundNext(FluxReceive.java:401) ~[reactor-netty-core-1.1.7.jar:1.1.7]
+	at reactor.netty.channel.ChannelOperations.onInboundNext(ChannelOperations.java:411) ~[reactor-netty-core-1.1.7.jar:1.1.7]
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113) ~[reactor-netty-core-1.1.7.jar:1.1.7]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318) ~[netty-codec-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-06-20T09:20:53.617+03:00  INFO 39687 --- [restartedMain] T.ToDoAppProjectApplication              : Starting ToDoAppProjectApplication using Java 20.0.1 with PID 39687 (/Users/fikriyigitvuranok/Downloads/ToDoAppProject/target/classes started by fikriyigitvuranok in /Users/fikriyigitvuranok/Downloads/ToDoAppProject)
+2023-06-20T09:20:53.619+03:00  INFO 39687 --- [restartedMain] T.ToDoAppProjectApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-20T09:20:53.663+03:00  INFO 39687 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-20T09:20:53.663+03:00  INFO 39687 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-20T09:20:55.473+03:00  INFO 39687 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3333 (http)
+2023-06-20T09:20:55.482+03:00  INFO 39687 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-20T09:20:55.482+03:00  INFO 39687 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-20T09:20:55.537+03:00  INFO 39687 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-20T09:20:55.537+03:00  INFO 39687 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1873 ms
+2023-06-20T09:20:55.672+03:00 DEBUG 39687 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-06-20T09:20:55.672+03:00 DEBUG 39687 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-06-20T09:20:56.024+03:00 DEBUG 39687 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-06-20T09:20:56.125+03:00 DEBUG 39687 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2023-06-20T09:20:56.523+03:00 DEBUG 39687 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-06-20T09:20:56.532+03:00 DEBUG 39687 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-06-20T09:20:56.574+03:00  WARN 39687 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-20T09:20:57.033+03:00  INFO 39687 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-20T09:20:57.040+03:00  INFO 39687 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@567d9b37, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72cbc16, org.springframework.security.web.context.SecurityContextHolderFilter@c41cdaa, org.springframework.security.web.header.HeaderWriterFilter@1e262238, org.springframework.web.filter.CorsFilter@52c96142, org.springframework.security.web.csrf.CsrfFilter@dbdb38c, org.springframework.security.web.authentication.logout.LogoutFilter@1fd45bfb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@606059f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@76644069, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4be9e3c7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@20ae35c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ebbe8c5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46c68eda, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71f77dae, org.springframework.security.web.access.ExceptionTranslationFilter@6aabe2aa, org.springframework.security.web.access.intercept.AuthorizationFilter@54ca61b3]
+2023-06-20T09:20:57.081+03:00  INFO 39687 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-20T09:20:57.126+03:00  INFO 39687 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3333 (http) with context path ''
+2023-06-20T09:20:57.139+03:00  INFO 39687 --- [restartedMain] T.ToDoAppProjectApplication              : Started ToDoAppProjectApplication in 3.907 seconds (process running for 4.922)
+2023-06-20T09:20:57.669+03:00  INFO 39687 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-20T09:20:57.669+03:00  INFO 39687 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-20T09:20:57.669+03:00 DEBUG 39687 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-06-20T09:20:57.670+03:00 DEBUG 39687 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-06-20T09:20:57.670+03:00 DEBUG 39687 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-06-20T09:20:57.671+03:00 DEBUG 39687 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7a85f818
+2023-06-20T09:20:57.671+03:00 DEBUG 39687 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1cbeea79
+2023-06-20T09:20:57.672+03:00 DEBUG 39687 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-06-20T09:20:57.672+03:00  INFO 39687 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-06-20T09:20:58.128+03:00  WARN 39687 --- [reactor-tcp-nio-1] s.b.a.r.ConnectionFactoryHealthIndicator : Health check failed
+
+io.r2dbc.postgresql.ExceptionFactory$PostgresqlNonTransientResourceException: database "ToDO" does not exist
+	at io.r2dbc.postgresql.ExceptionFactory.createException(ExceptionFactory.java:109) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.ExceptionFactory.createException(ExceptionFactory.java:65) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.ExceptionFactory.handleErrorResponse(ExceptionFactory.java:132) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:112) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxHandle$HandleConditionalSubscriber.onNext(FluxHandle.java:342) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.drain(FluxCreate.java:814) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.next(FluxCreate.java:739) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxCreate$SerializedFluxSink.next(FluxCreate.java:161) ~[reactor-core-3.5.6.jar:3.5.6]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$Conversation.emit(ReactorNettyClient.java:687) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.emit(ReactorNettyClient.java:939) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:813) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:719) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:128) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:292) ~[reactor-netty-core-1.1.7.jar:1.1.7]
+	at reactor.netty.channel.FluxReceive.onInboundNext(FluxReceive.java:401) ~[reactor-netty-core-1.1.7.jar:1.1.7]
+	at reactor.netty.channel.ChannelOperations.onInboundNext(ChannelOperations.java:411) ~[reactor-netty-core-1.1.7.jar:1.1.7]
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113) ~[reactor-netty-core-1.1.7.jar:1.1.7]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318) ~[netty-codec-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-06-20T09:27:08.101+03:00  INFO 39859 --- [restartedMain] T.ToDoAppProjectApplication              : Starting ToDoAppProjectApplication using Java 20.0.1 with PID 39859 (/Users/fikriyigitvuranok/Downloads/ToDoAppProject/target/classes started by fikriyigitvuranok in /Users/fikriyigitvuranok/Downloads/ToDoAppProject)
+2023-06-20T09:27:08.103+03:00  INFO 39859 --- [restartedMain] T.ToDoAppProjectApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-20T09:27:08.143+03:00  INFO 39859 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-20T09:27:08.143+03:00  INFO 39859 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-20T09:27:09.755+03:00  INFO 39859 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3333 (http)
+2023-06-20T09:27:09.764+03:00  INFO 39859 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-20T09:27:09.764+03:00  INFO 39859 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-20T09:27:09.826+03:00  INFO 39859 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-20T09:27:09.826+03:00  INFO 39859 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1683 ms
+2023-06-20T09:27:09.959+03:00 DEBUG 39859 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-06-20T09:27:09.959+03:00 DEBUG 39859 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-06-20T09:27:10.316+03:00 DEBUG 39859 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-06-20T09:27:10.414+03:00 DEBUG 39859 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2023-06-20T09:27:10.791+03:00 DEBUG 39859 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-06-20T09:27:10.799+03:00 DEBUG 39859 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-06-20T09:27:10.841+03:00  WARN 39859 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-20T09:27:11.351+03:00  INFO 39859 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-20T09:27:11.360+03:00  INFO 39859 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@191f639e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e1d2247, org.springframework.security.web.context.SecurityContextHolderFilter@4855cda2, org.springframework.security.web.header.HeaderWriterFilter@74f0373d, org.springframework.web.filter.CorsFilter@447d1d85, org.springframework.security.web.csrf.CsrfFilter@7f0d936e, org.springframework.security.web.authentication.logout.LogoutFilter@2fce9fca, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6aa6362c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1ea3ad89, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@10293009, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@14ba7fed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@358fc2b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46990403, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7248a201, org.springframework.security.web.access.ExceptionTranslationFilter@6e7dd9d, org.springframework.security.web.access.intercept.AuthorizationFilter@44275081]
+2023-06-20T09:27:11.411+03:00  INFO 39859 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-20T09:27:11.459+03:00  INFO 39859 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3333 (http) with context path ''
+2023-06-20T09:27:11.474+03:00  INFO 39859 --- [restartedMain] T.ToDoAppProjectApplication              : Started ToDoAppProjectApplication in 3.789 seconds (process running for 4.635)
+2023-06-20T09:27:11.773+03:00  INFO 39859 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-20T09:27:11.773+03:00  INFO 39859 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-20T09:27:11.773+03:00 DEBUG 39859 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-06-20T09:27:11.773+03:00 DEBUG 39859 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-06-20T09:27:11.773+03:00 DEBUG 39859 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-06-20T09:27:11.774+03:00 DEBUG 39859 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@20b59379
+2023-06-20T09:27:11.775+03:00 DEBUG 39859 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@23b57c24
+2023-06-20T09:27:11.775+03:00 DEBUG 39859 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-06-20T09:27:11.775+03:00  INFO 39859 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-06-20T09:27:12.165+03:00  WARN 39859 --- [reactor-tcp-nio-1] s.b.a.r.ConnectionFactoryHealthIndicator : Health check failed
+
+io.r2dbc.postgresql.ExceptionFactory$PostgresqlNonTransientResourceException: database "ToDO" does not exist
+	at io.r2dbc.postgresql.ExceptionFactory.createException(ExceptionFactory.java:109) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.ExceptionFactory.createException(ExceptionFactory.java:65) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.ExceptionFactory.handleErrorResponse(ExceptionFactory.java:132) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:112) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxHandle$HandleConditionalSubscriber.onNext(FluxHandle.java:342) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.drain(FluxCreate.java:814) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.next(FluxCreate.java:739) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxCreate$SerializedFluxSink.next(FluxCreate.java:161) ~[reactor-core-3.5.6.jar:3.5.6]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$Conversation.emit(ReactorNettyClient.java:687) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.emit(ReactorNettyClient.java:939) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:813) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:719) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:128) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:292) ~[reactor-netty-core-1.1.7.jar:1.1.7]
+	at reactor.netty.channel.FluxReceive.onInboundNext(FluxReceive.java:401) ~[reactor-netty-core-1.1.7.jar:1.1.7]
+	at reactor.netty.channel.ChannelOperations.onInboundNext(ChannelOperations.java:411) ~[reactor-netty-core-1.1.7.jar:1.1.7]
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113) ~[reactor-netty-core-1.1.7.jar:1.1.7]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318) ~[netty-codec-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-06-20T09:54:20.649+03:00  INFO 40648 --- [restartedMain] T.ToDoAppProjectApplication              : Starting ToDoAppProjectApplication using Java 20.0.1 with PID 40648 (/Users/fikriyigitvuranok/Downloads/ToDoAppProject/target/classes started by fikriyigitvuranok in /Users/fikriyigitvuranok/Downloads/ToDoAppProject)
+2023-06-20T09:54:20.651+03:00  INFO 40648 --- [restartedMain] T.ToDoAppProjectApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-20T09:54:20.693+03:00  INFO 40648 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-20T09:54:20.694+03:00  INFO 40648 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-20T09:54:22.572+03:00  INFO 40648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3333 (http)
+2023-06-20T09:54:22.583+03:00  INFO 40648 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-20T09:54:22.583+03:00  INFO 40648 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-20T09:54:22.645+03:00  INFO 40648 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-20T09:54:22.645+03:00  INFO 40648 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1951 ms
+2023-06-20T09:54:22.793+03:00 DEBUG 40648 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-06-20T09:54:22.793+03:00 DEBUG 40648 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-06-20T09:54:23.203+03:00 DEBUG 40648 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-06-20T09:54:23.324+03:00 DEBUG 40648 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2023-06-20T09:54:23.720+03:00 DEBUG 40648 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-06-20T09:54:23.730+03:00 DEBUG 40648 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-06-20T09:54:23.782+03:00  WARN 40648 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-20T09:54:24.308+03:00  INFO 40648 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-20T09:54:24.317+03:00  INFO 40648 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@723a8b22, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63d79e69, org.springframework.security.web.context.SecurityContextHolderFilter@6f10ac4, org.springframework.security.web.header.HeaderWriterFilter@4201551d, org.springframework.web.filter.CorsFilter@3979a290, org.springframework.security.web.csrf.CsrfFilter@2c5af535, org.springframework.security.web.authentication.logout.LogoutFilter@6fe7c346, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1b367dfc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6dcdeffc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7f7d7d30, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2c07af7b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b61b946, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6de2dfbb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59389a66, org.springframework.security.web.access.ExceptionTranslationFilter@631b0239, org.springframework.security.web.access.intercept.AuthorizationFilter@626f7412]
+2023-06-20T09:54:24.358+03:00  INFO 40648 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-20T09:54:24.413+03:00  INFO 40648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3333 (http) with context path ''
+2023-06-20T09:54:24.430+03:00  INFO 40648 --- [restartedMain] T.ToDoAppProjectApplication              : Started ToDoAppProjectApplication in 4.209 seconds (process running for 5.352)
+2023-06-20T09:54:24.959+03:00  INFO 40648 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-20T09:54:24.959+03:00  INFO 40648 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-20T09:54:24.959+03:00 DEBUG 40648 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-06-20T09:54:24.959+03:00 DEBUG 40648 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-06-20T09:54:24.960+03:00 DEBUG 40648 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-06-20T09:54:24.960+03:00 DEBUG 40648 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7a60dbda
+2023-06-20T09:54:24.961+03:00 DEBUG 40648 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@539e9e43
+2023-06-20T09:54:24.961+03:00 DEBUG 40648 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-06-20T09:54:24.961+03:00  INFO 40648 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-06-20T09:54:25.407+03:00  WARN 40648 --- [reactor-tcp-nio-1] s.b.a.r.ConnectionFactoryHealthIndicator : Health check failed
+
+io.r2dbc.postgresql.ExceptionFactory$PostgresqlNonTransientResourceException: database "ToDO" does not exist
+	at io.r2dbc.postgresql.ExceptionFactory.createException(ExceptionFactory.java:109) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.ExceptionFactory.createException(ExceptionFactory.java:65) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.ExceptionFactory.handleErrorResponse(ExceptionFactory.java:132) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:112) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxHandle$HandleConditionalSubscriber.onNext(FluxHandle.java:342) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.drain(FluxCreate.java:814) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.next(FluxCreate.java:739) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxCreate$SerializedFluxSink.next(FluxCreate.java:161) ~[reactor-core-3.5.6.jar:3.5.6]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$Conversation.emit(ReactorNettyClient.java:687) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.emit(ReactorNettyClient.java:939) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:813) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:719) ~[r2dbc-postgresql-1.0.1.RELEASE.jar:1.0.1.RELEASE]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:128) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.5.6.jar:3.5.6]
+	at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:292) ~[reactor-netty-core-1.1.7.jar:1.1.7]
+	at reactor.netty.channel.FluxReceive.onInboundNext(FluxReceive.java:401) ~[reactor-netty-core-1.1.7.jar:1.1.7]
+	at reactor.netty.channel.ChannelOperations.onInboundNext(ChannelOperations.java:411) ~[reactor-netty-core-1.1.7.jar:1.1.7]
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113) ~[reactor-netty-core-1.1.7.jar:1.1.7]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318) ~[netty-codec-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-06-20T10:07:14.488+03:00  INFO 40957 --- [restartedMain] T.ToDoAppProjectApplication              : Starting ToDoAppProjectApplication using Java 20.0.1 with PID 40957 (/Users/fikriyigitvuranok/Downloads/ToDoAppProject/target/classes started by fikriyigitvuranok in /Users/fikriyigitvuranok/Downloads/ToDoAppProject)
+2023-06-20T10:07:14.490+03:00  INFO 40957 --- [restartedMain] T.ToDoAppProjectApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-20T10:07:14.532+03:00  INFO 40957 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-20T10:07:14.533+03:00  INFO 40957 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-20T10:07:16.160+03:00  INFO 40957 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3333 (http)
+2023-06-20T10:07:16.168+03:00  INFO 40957 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-20T10:07:16.168+03:00  INFO 40957 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-20T10:07:16.221+03:00  INFO 40957 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-20T10:07:16.222+03:00  INFO 40957 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1688 ms
+2023-06-20T10:07:16.349+03:00 DEBUG 40957 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-06-20T10:07:16.349+03:00 DEBUG 40957 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-06-20T10:07:16.725+03:00 DEBUG 40957 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-06-20T10:07:16.829+03:00 DEBUG 40957 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2023-06-20T10:07:17.207+03:00 DEBUG 40957 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-06-20T10:07:17.214+03:00 DEBUG 40957 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-06-20T10:07:17.268+03:00  WARN 40957 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-20T10:07:17.753+03:00  INFO 40957 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-20T10:07:17.762+03:00  INFO 40957 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@55a0d5c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b72497d, org.springframework.security.web.context.SecurityContextHolderFilter@c41cdaa, org.springframework.security.web.header.HeaderWriterFilter@1e262238, org.springframework.web.filter.CorsFilter@567d9b37, org.springframework.security.web.csrf.CsrfFilter@dbdb38c, org.springframework.security.web.authentication.logout.LogoutFilter@1fd45bfb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ed6a632, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@76644069, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@72cbc16, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@23b5a268, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ebbe8c5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46c68eda, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52c96142, org.springframework.security.web.access.ExceptionTranslationFilter@6aabe2aa, org.springframework.security.web.access.intercept.AuthorizationFilter@54ca61b3]
+2023-06-20T10:07:17.804+03:00  INFO 40957 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-20T10:07:17.852+03:00  INFO 40957 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3333 (http) with context path ''
+2023-06-20T10:07:17.866+03:00  INFO 40957 --- [restartedMain] T.ToDoAppProjectApplication              : Started ToDoAppProjectApplication in 3.783 seconds (process running for 4.599)
+2023-06-20T10:07:18.149+03:00  INFO 40957 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-20T10:07:18.150+03:00  INFO 40957 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-20T10:07:18.150+03:00 DEBUG 40957 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-06-20T10:07:18.150+03:00 DEBUG 40957 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-06-20T10:07:18.150+03:00 DEBUG 40957 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-06-20T10:07:18.151+03:00 DEBUG 40957 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@17edf5ee
+2023-06-20T10:07:18.152+03:00 DEBUG 40957 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@16d15c97
+2023-06-20T10:07:18.152+03:00 DEBUG 40957 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-06-20T10:07:18.152+03:00  INFO 40957 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-06-20T10:35:25.555+03:00  INFO 41538 --- [restartedMain] T.ToDoAppProjectApplication              : Starting ToDoAppProjectApplication using Java 20.0.1 with PID 41538 (/Users/fikriyigitvuranok/Downloads/ToDoAppProject/target/classes started by fikriyigitvuranok in /Users/fikriyigitvuranok/Downloads/ToDoAppProject)
+2023-06-20T10:35:25.559+03:00  INFO 41538 --- [restartedMain] T.ToDoAppProjectApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-20T10:35:25.616+03:00  INFO 41538 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-20T10:35:25.616+03:00  INFO 41538 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-20T10:35:27.718+03:00  INFO 41538 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3333 (http)
+2023-06-20T10:35:27.728+03:00  INFO 41538 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-20T10:35:27.729+03:00  INFO 41538 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-20T10:35:27.805+03:00  INFO 41538 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-20T10:35:27.806+03:00  INFO 41538 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2188 ms
+2023-06-20T10:35:27.952+03:00 DEBUG 41538 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-06-20T10:35:27.952+03:00 DEBUG 41538 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-06-20T10:35:28.355+03:00 DEBUG 41538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-06-20T10:35:28.480+03:00 DEBUG 41538 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2023-06-20T10:35:28.867+03:00 DEBUG 41538 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-06-20T10:35:28.875+03:00 DEBUG 41538 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-06-20T10:35:28.929+03:00  WARN 41538 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-06-20T10:35:29.505+03:00  INFO 41538 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-20T10:35:29.513+03:00  INFO 41538 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@55a0d5c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b72497d, org.springframework.security.web.context.SecurityContextHolderFilter@c41cdaa, org.springframework.security.web.header.HeaderWriterFilter@1e262238, org.springframework.web.filter.CorsFilter@567d9b37, org.springframework.security.web.csrf.CsrfFilter@dbdb38c, org.springframework.security.web.authentication.logout.LogoutFilter@1fd45bfb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ed6a632, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@76644069, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@72cbc16, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@23b5a268, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ebbe8c5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46c68eda, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52c96142, org.springframework.security.web.access.ExceptionTranslationFilter@6aabe2aa, org.springframework.security.web.access.intercept.AuthorizationFilter@54ca61b3]
+2023-06-20T10:35:29.556+03:00  INFO 41538 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-20T10:35:29.622+03:00  INFO 41538 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3333 (http) with context path ''
+2023-06-20T10:35:29.641+03:00  INFO 41538 --- [restartedMain] T.ToDoAppProjectApplication              : Started ToDoAppProjectApplication in 4.532 seconds (process running for 5.607)
+2023-06-20T10:35:29.877+03:00  INFO 41538 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-20T10:35:29.877+03:00  INFO 41538 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-20T10:35:29.877+03:00 DEBUG 41538 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-06-20T10:35:29.877+03:00 DEBUG 41538 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-06-20T10:35:29.878+03:00 DEBUG 41538 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-06-20T10:35:29.879+03:00 DEBUG 41538 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@44f2d5df
+2023-06-20T10:35:29.879+03:00 DEBUG 41538 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4e9cca7a
+2023-06-20T10:35:29.880+03:00 DEBUG 41538 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-06-20T10:35:29.880+03:00  INFO 41538 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
