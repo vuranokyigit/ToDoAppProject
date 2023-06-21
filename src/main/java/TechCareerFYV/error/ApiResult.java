@@ -1,6 +1,7 @@
 package TechCareerFYV.error;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.extern.log4j.Log4j2;
@@ -10,6 +11,7 @@ import java.util.Map;
 //Lombok
 @Data
 //The @Data annotation automatically creates all the standard methods of the class (getter, setter, toString, equals, hashCode, etc.). This allows you to define classes in a shorter and cleaner way.
+@AllArgsConstructor
 @Builder
 //The @Builder annotation is used to make the object creation process easier. By adding the @Builder annotation above the class, a nested class is created that implements the builder pattern. This ensures a readable and chained structure during object creation.
 @Log4j2

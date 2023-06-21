@@ -13,7 +13,7 @@ public class AuditorAwareImpl implements AuditorAware<String> {
 
     @Override
     public Optional<String> getCurrentAuditor(){
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();//login or not
         if (authentication!=null && authentication.isAuthenticated()){
             System.out.println(authentication.getName());
             System.out.println(authentication.getPrincipal());
