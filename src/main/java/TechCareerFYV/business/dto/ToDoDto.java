@@ -1,4 +1,4 @@
-package TechCareerFYV.business;
+package TechCareerFYV.business.dto;
 
 import TechCareerFYV.audit.AuditingAwareBaseDto;
 import jakarta.validation.constraints.NotEmpty;
@@ -18,10 +18,10 @@ import java.io.Serializable;
 public class ToDoDto extends AuditingAwareBaseDto implements Serializable {
     public static final Long serialVersionUID = 1L;
 
-    @NotEmpty(message = "Header cannot be null")
-    @Size(min = 10, message = "Title must be at least 10 characters.")
+    @NotEmpty(message = "{todo.header.validation.constraints.NotNull.message}")
+    @Size(min = 10, message = "{todo.header.least.validation.constraints.NotNull.message}")
     private String header;
-    @NotEmpty(message = "Content cannot be null")
-    @Size(max = 50, message = "Content must be at least 50 characters.")
+    @NotEmpty(message = "{todo.content.validation.constraints.NotNull.message}")
+    @Size(max = 50, message = "{todo.content.least.validation.constraints.NotNull.message}")
     private String content;
 }
