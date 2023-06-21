@@ -13,11 +13,9 @@ abstract public class AuditingAwareBaseDto implements Serializable {
     //Serializing
 public static final Long serialVersionUID = 1L;
     //Global
-    private Long id;
-    @Builder.Default
-    private Date  systemDate=new Date(System.currentTimeMillis());
-
-
+    private Long id;//id
+    @Builder.Default//use whatever the current default time is
+    private Date  systemDate=new Date(System.currentTimeMillis());//date
     //Auditing
     @JsonIgnore
     protected String createdUser;

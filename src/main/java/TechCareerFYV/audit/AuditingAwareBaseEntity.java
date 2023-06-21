@@ -18,19 +18,19 @@ import java.util.Date;
 @MappedSuperclass
 @JsonIgnoreProperties(value = {"created_date, updated_date"}, allowGetters = true)
 public class AuditingAwareBaseEntity {
-
+//Who added?
     @CreatedBy
     @Column(name = "created_user")
     protected String createdUser;
-
+//Who added when?
     @CreatedDate
     @Column(name = "created_date")
     protected Date createdDate;
-
+//Who updated?
     @LastModifiedBy
     @Column(name = "updated_user")
     protected String updatedUser;
-
+//Who updated when?
     @LastModifiedDate
     @Column(name = "updated_date")
     protected Date updatedDate;
