@@ -272,3 +272,102 @@ Consider the following:
 2023-06-21T11:01:42.554+03:00 DEBUG 57047 --- [http-nio-3333-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
 2023-06-21T11:01:42.564+03:00 DEBUG 57047 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2023-06-21T11:01:42.564+03:00 DEBUG 57047 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-06-21T11:07:41.972+03:00  INFO 57303 --- [restartedMain] T.ToDoAppProjectApplication              : Starting ToDoAppProjectApplication using Java 20.0.1 with PID 57303 (/Users/fikriyigitvuranok/Downloads/ToDoAppProject/target/classes started by fikriyigitvuranok in /Users/fikriyigitvuranok/Downloads/ToDoAppProject)
+2023-06-21T11:07:41.975+03:00  INFO 57303 --- [restartedMain] T.ToDoAppProjectApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-21T11:07:42.019+03:00  INFO 57303 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-21T11:07:42.019+03:00  INFO 57303 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-21T11:07:43.787+03:00  INFO 57303 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3333 (http)
+2023-06-21T11:07:43.798+03:00  INFO 57303 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-21T11:07:43.799+03:00  INFO 57303 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-21T11:07:43.856+03:00  INFO 57303 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-21T11:07:43.856+03:00  INFO 57303 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1837 ms
+2023-06-21T11:07:44.006+03:00 DEBUG 57303 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-06-21T11:07:44.007+03:00 DEBUG 57303 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-06-21T11:07:44.453+03:00 DEBUG 57303 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-06-21T11:07:44.497+03:00  INFO 57303 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-06-21T11:07:44.567+03:00 DEBUG 57303 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2023-06-21T11:07:44.965+03:00 DEBUG 57303 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-06-21T11:07:44.972+03:00 DEBUG 57303 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-06-21T11:07:45.440+03:00  INFO 57303 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-21T11:07:45.446+03:00  INFO 57303 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-21T11:07:45.500+03:00  INFO 57303 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3333 (http) with context path ''
+2023-06-21T11:07:45.515+03:00  INFO 57303 --- [restartedMain] T.ToDoAppProjectApplication              : Started ToDoAppProjectApplication in 3.979 seconds (process running for 4.894)
+2023-06-21T11:07:45.983+03:00  INFO 57303 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-21T11:07:45.983+03:00  INFO 57303 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-21T11:07:45.983+03:00 DEBUG 57303 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-06-21T11:07:45.983+03:00 DEBUG 57303 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-06-21T11:07:45.983+03:00 DEBUG 57303 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-06-21T11:07:45.984+03:00 DEBUG 57303 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@332e6eff
+2023-06-21T11:07:45.984+03:00 DEBUG 57303 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7b2acd36
+2023-06-21T11:07:45.985+03:00 DEBUG 57303 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-06-21T11:07:45.985+03:00  INFO 57303 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-06-21T11:08:32.408+03:00  WARN 57303 --- [http-nio-3333-exec-9] org.postgresql.Driver                    : JDBC URL contains too many / characters: jdbc:postgresql://localhost:5432/ToDo:/memoryPersist_todo
+2023-06-21T11:09:19.904+03:00  WARN 57303 --- [http-nio-3333-exec-2] org.postgresql.Driver                    : JDBC URL contains too many / characters: jdbc:postgresql://localhost:5432/ToDo:/memoryPersist/todo
+2023-06-21T11:10:24.228+03:00  INFO 57420 --- [restartedMain] T.ToDoAppProjectApplication              : Starting ToDoAppProjectApplication using Java 20.0.1 with PID 57420 (/Users/fikriyigitvuranok/Downloads/ToDoAppProject/target/classes started by fikriyigitvuranok in /Users/fikriyigitvuranok/Downloads/ToDoAppProject)
+2023-06-21T11:10:24.229+03:00  INFO 57420 --- [restartedMain] T.ToDoAppProjectApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-21T11:10:24.272+03:00  INFO 57420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-21T11:10:24.273+03:00  INFO 57420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-21T11:10:26.040+03:00  INFO 57420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3333 (http)
+2023-06-21T11:10:26.052+03:00  INFO 57420 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-21T11:10:26.052+03:00  INFO 57420 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-21T11:10:26.114+03:00  INFO 57420 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-21T11:10:26.114+03:00  INFO 57420 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1841 ms
+2023-06-21T11:10:26.248+03:00 DEBUG 57420 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-06-21T11:10:26.248+03:00 DEBUG 57420 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-06-21T11:10:26.633+03:00 DEBUG 57420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-06-21T11:10:26.677+03:00  INFO 57420 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-06-21T11:10:26.755+03:00 DEBUG 57420 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2023-06-21T11:10:27.172+03:00 DEBUG 57420 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-06-21T11:10:27.180+03:00 DEBUG 57420 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-06-21T11:10:27.672+03:00  INFO 57420 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-21T11:10:27.679+03:00  INFO 57420 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-21T11:10:27.768+03:00  INFO 57420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3333 (http) with context path ''
+2023-06-21T11:10:27.784+03:00  INFO 57420 --- [restartedMain] T.ToDoAppProjectApplication              : Started ToDoAppProjectApplication in 3.985 seconds (process running for 4.893)
+2023-06-21T11:10:28.236+03:00  INFO 57420 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-21T11:10:28.236+03:00  INFO 57420 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-21T11:10:28.237+03:00 DEBUG 57420 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-06-21T11:10:28.237+03:00 DEBUG 57420 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-06-21T11:10:28.237+03:00 DEBUG 57420 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-06-21T11:10:28.238+03:00 DEBUG 57420 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@264f7de1
+2023-06-21T11:10:28.238+03:00 DEBUG 57420 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6ee2f322
+2023-06-21T11:10:28.238+03:00 DEBUG 57420 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-06-21T11:10:28.238+03:00  INFO 57420 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-06-21T11:10:38.520+03:00 DEBUG 57420 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2023-06-21T11:10:38.539+03:00 DEBUG 57420 --- [http-nio-3333-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-06-21T11:10:38.794+03:00 DEBUG 57420 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-06-21T11:10:38.841+03:00 DEBUG 57420 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/js/template.js", parameters={}
+2023-06-21T11:10:38.841+03:00 DEBUG 57420 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2023-06-21T11:10:38.846+03:00 DEBUG 57420 --- [http-nio-3333-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-21T11:10:38.846+03:00 DEBUG 57420 --- [http-nio-3333-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-06-21T11:10:38.856+03:00 DEBUG 57420 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-06-21T11:10:38.856+03:00 DEBUG 57420 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-06-21T11:11:14.869+03:00  WARN 57420 --- [http-nio-3333-exec-8] org.postgresql.Driver                    : JDBC URL contains too many / characters: jdbc:postgresql://localhost:5432:./memoryPersist/todo
+2023-06-21T11:13:55.576+03:00  INFO 57558 --- [restartedMain] T.ToDoAppProjectApplication              : Starting ToDoAppProjectApplication using Java 20.0.1 with PID 57558 (/Users/fikriyigitvuranok/Downloads/ToDoAppProject/target/classes started by fikriyigitvuranok in /Users/fikriyigitvuranok/Downloads/ToDoAppProject)
+2023-06-21T11:13:55.578+03:00  INFO 57558 --- [restartedMain] T.ToDoAppProjectApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-21T11:13:55.621+03:00  INFO 57558 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-21T11:13:55.622+03:00  INFO 57558 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-21T11:13:57.118+03:00  INFO 57558 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3333 (http)
+2023-06-21T11:13:57.125+03:00  INFO 57558 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-21T11:13:57.126+03:00  INFO 57558 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-21T11:13:57.174+03:00  INFO 57558 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-21T11:13:57.175+03:00  INFO 57558 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1552 ms
+2023-06-21T11:13:57.283+03:00 DEBUG 57558 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-06-21T11:13:57.283+03:00 DEBUG 57558 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-06-21T11:13:57.639+03:00 DEBUG 57558 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-06-21T11:13:57.669+03:00  INFO 57558 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-06-21T11:13:57.722+03:00 DEBUG 57558 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2023-06-21T11:13:58.110+03:00 DEBUG 57558 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-06-21T11:13:58.117+03:00 DEBUG 57558 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-06-21T11:13:58.515+03:00  INFO 57558 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-21T11:13:58.523+03:00  INFO 57558 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-21T11:13:58.575+03:00  INFO 57558 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3333 (http) with context path ''
+2023-06-21T11:13:58.590+03:00  INFO 57558 --- [restartedMain] T.ToDoAppProjectApplication              : Started ToDoAppProjectApplication in 3.387 seconds (process running for 4.181)
+2023-06-21T11:13:58.733+03:00  INFO 57558 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-21T11:13:58.734+03:00  INFO 57558 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-21T11:13:58.734+03:00 DEBUG 57558 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-06-21T11:13:58.734+03:00 DEBUG 57558 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-06-21T11:13:58.734+03:00 DEBUG 57558 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-06-21T11:13:58.735+03:00 DEBUG 57558 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4395774
+2023-06-21T11:13:58.735+03:00 DEBUG 57558 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@438cd0b5
+2023-06-21T11:13:58.735+03:00 DEBUG 57558 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-06-21T11:13:58.736+03:00  INFO 57558 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
