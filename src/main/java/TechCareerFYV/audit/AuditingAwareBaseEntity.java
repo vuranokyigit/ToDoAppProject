@@ -8,7 +8,6 @@ import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
-
 import java.util.Date;
 
 //Lombok
@@ -16,8 +15,8 @@ import java.util.Date;
 
 //Super Class
 @MappedSuperclass
-@JsonIgnoreProperties(value = {"created_date, updated_date"}, allowGetters = true)
-public class AuditingAwareBaseEntity {
+@JsonIgnoreProperties(value = {"created_date,updated_date"},allowGetters = true)
+abstract public class AuditingAwareBaseEntity {
 //Who added?
     @CreatedBy
     @Column(name = "created_user")
