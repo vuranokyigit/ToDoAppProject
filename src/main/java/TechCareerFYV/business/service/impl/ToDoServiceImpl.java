@@ -101,7 +101,7 @@ public class ToDoServiceImpl implements IToDoGenericService <ToDoDto, ToDoEntity
     //Update
     @Transactional //Create, Delete, Update
     @Override
-    public ToDoDto todoServiceUpdateById(Long id) {
+    public ToDoDto todoServiceUpdateById(Long id,  ToDoDto toDoDto) {
         ToDoDto todoDtoFindForUpdate= todoServiceFindById(id);
         ToDoEntity toDoEntity =DtoToEntity(todoDtoFindForUpdate);
         if (toDoEntity!=null){
