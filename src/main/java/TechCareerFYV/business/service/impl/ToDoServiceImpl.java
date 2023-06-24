@@ -6,8 +6,6 @@ import TechCareerFYV.business.service.IToDoGenericService;
 import TechCareerFYV.data.entity.ToDoEntity;
 import TechCareerFYV.data.repository.IToDoRepository;
 import TechCareerFYV.exception.BadRequestException;
-import TechCareerFYV.exception.ResourceNotFoundException;
-import io.swagger.v3.oas.annotations.servers.Server;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.transaction.Transactional;
@@ -18,7 +16,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.webjars.NotFoundException;
 
-import java.rmi.NotBoundException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -86,7 +83,7 @@ public class ToDoServiceImpl implements IToDoGenericService <ToDoDto, ToDoEntity
             );//optional istedigi icin orElseThrow() from optional lib. eklemesi yaptik
             //orElseThrow()-> veri varsa veriyi yoksa belirledigim throwu gonder
         }else if (id==null){
-            throw new NotFoundException(id+" ToDoDto is null");
+            throw new BadRequestException(id+" ToDoDto is null");
         }
 
         return EntityToDto(toDoEntity);
@@ -120,7 +117,15 @@ public class ToDoServiceImpl implements IToDoGenericService <ToDoDto, ToDoEntity
     //###########Pageable#########///
     @Override
     public List<ToDoDto> todoServiceAllList() {
-        return null;
+        Iterable<ToDoEntity> toDoEntityPage=iToDoRepository.findAll();
+        List<ToDoDto> list = new ArrayList<>();
+        //her bir elemana for ile eris
+        for (ToDoEntity entity: toDoEntityPage){
+            ToDoDto toDoDto = EntityToDto(entity);
+            list.add(toDoDto);
+        }
+        //listi dondur
+        return list;
     }
 
     @Override
@@ -135,18 +140,35 @@ public class ToDoServiceImpl implements IToDoGenericService <ToDoDto, ToDoEntity
 
 
     //###########Profile#########///
+    //Add multi data
     @Override
-    public String speedDataService() {
-        return null;
+    public List<ToDoDto> speedDataService() {
+        List<ToDoDto> list = new ArrayList<>();
+        for (int i=1; i<=10; i++){
+            ToDoDto toDoDto = ToDoDto.builder()
+                    .header("header "+i)
+                    .content("content "+i)
+                    .build();
+            todoServiceCreate(toDoDto);
+            list.add(toDoDto);
+        }
+        return list;
     }
-
+    //Delete multi data
     @Override
     public String allDeleteService() {
-        return null;
+        iToDoRepository.deleteAll();
+        log.info("Deleted");
+        return "Deleted";
     }
 
     @Override
     public String appInformationService(HttpServletRequest request, HttpServletResponse response) {
-        return null;
+        String URIInfo = request.getRequestURI();
+        String localhostInfo = request.getLocalAddr();
+        String sessionInfo = request.getSession().toString();
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(URIInfo).append(" ").append(localhostInfo).append(" ").append(sessionInfo);
+        return stringBuilder.toString();
     }
 }
