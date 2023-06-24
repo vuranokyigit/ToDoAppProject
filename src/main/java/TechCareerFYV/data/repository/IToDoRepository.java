@@ -1,5 +1,5 @@
 package TechCareerFYV.data.repository;
-
+//gerekli mi bi bak buraya!!!!!!
 import TechCareerFYV.data.entity.ToDoEntity;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -9,10 +9,8 @@ import java.util.List;
 
 @Repository
 public interface IToDoRepository extends CrudRepository<ToDoEntity, Long> {
-
     //Delivered query
     ToDoEntity findByHeader(String header);
-
     //query
     @Query("select b from ToDoEntity b")
     List<ToDoEntity> myToDoList();
