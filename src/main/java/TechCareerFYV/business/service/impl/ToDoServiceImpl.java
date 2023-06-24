@@ -5,6 +5,7 @@ import TechCareerFYV.business.dto.ToDoDto;
 import TechCareerFYV.business.service.IToDoGenericService;
 import TechCareerFYV.data.entity.ToDoEntity;
 import TechCareerFYV.data.repository.IToDoRepository;
+import TechCareerFYV.exception.BadRequestException;
 import TechCareerFYV.exception.ResourceNotFoundException;
 import io.swagger.v3.oas.annotations.servers.Server;
 import jakarta.servlet.http.HttpServletRequest;
@@ -80,7 +81,7 @@ public class ToDoServiceImpl implements IToDoGenericService <ToDoDto, ToDoEntity
         if (id!=null){
              toDoEntity= iToDoRepository.findById(id).orElseThrow(
                     ()->{
-                        return new ResourceNotFoundException((id+ "nolu id bulunamadi"));
+                        return new BadRequestException((id+ "nolu id bulunamadi"));
                     }
             );//optional istedigi icin orElseThrow() from optional lib. eklemesi yaptik
             //orElseThrow()-> veri varsa veriyi yoksa belirledigim throwu gonder
