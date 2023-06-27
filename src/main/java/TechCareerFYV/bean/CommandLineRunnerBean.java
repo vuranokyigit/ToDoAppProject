@@ -1,12 +1,35 @@
 package TechCareerFYV.bean;
 
+import TechCareerFYV.business.dto.ToDoDto;
+import TechCareerFYV.business.service.impl.ToDoServiceImpl;
+import lombok.RequiredArgsConstructor;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+@RequiredArgsConstructor
 @Configuration
 public class CommandLineRunnerBean {
 
+    private final ToDoServiceImpl toDoService;
 
-}
+
+    @Bean
+    public CommandLineRunner commandLineRunnerMethod(){
+        return args -> {
+            List<ToDoDto> list = new ArrayList<>();
+            for (int i = 1; i <= 10; i++) {
+                ToDoDto toDoDto = ToDoDto.builder()
+                        .header("header " + UUID.randomUUID().toString())
+                        .content("content " + UUID.randomUUID().toString())
+                        .build();
+                toDoService.todoServiceCreate(toDoDto);
+                list.add(toDoDto);
+            }
+        }; //end args
+    } // end command Line Runner Method
+} // end class
+

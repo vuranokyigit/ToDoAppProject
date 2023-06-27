@@ -19,11 +19,10 @@ import java.io.Serializable;
 public class ToDoEntity extends BaseEntity implements Serializable {
     public static final Long serialVersionUID = 1L;
 
-
-    @Column(name="header", columnDefinition = "varchar(255) don't enter default 'header'")
+    @Column(name = "header",columnDefinition = "varchar(255) default 'header CANNOT BE NULL'")
     private String header;
 
-    @Column(name="content", columnDefinition = "varchar(255) don't enter default 'content'")
+    @Column(name = "content",columnDefinition = "varchar(255) default 'content CANNOT BE NULL'")
     private String content;
 
 }

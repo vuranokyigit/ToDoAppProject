@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-//Lombol
+//Lombok
 @RequiredArgsConstructor
 @Log4j2
 
@@ -45,15 +45,17 @@ public class ToDoApiImpl implements IToDoGenericApi<ToDoDto> {
     }
 
     //Speed, Delete All########
+    // localhost:3333/todo/api/v1/speed/data(ayni sekilde postmanda send yapip 5 data olustugunu gorecegiz)
     @GetMapping("/speed/data")
     @Override
     public ResponseEntity<List<ToDoDto>> speedDataService() {
         return ResponseEntity.ok( iToDoGenericService.speedDataService());
-    }
+    }//5 data add
     @GetMapping("/all/delete")
     @Override
     public ResponseEntity<String> allDeleteService() {
-        return ResponseEntity.ok( iToDoGenericService.allDeleteService());    }
+        return ResponseEntity.ok( iToDoGenericService.allDeleteService());
+    }//all data delete
 
     @GetMapping("/app/information")
     @Override
@@ -82,13 +84,14 @@ public class ToDoApiImpl implements IToDoGenericApi<ToDoDto> {
     //Create
     //localhost:3333/todo/api/v1/create
     @Override
-    @PostMapping("create")
+    @PostMapping("/create")
     public ResponseEntity<?> todoServiceCreate(@Valid @RequestBody ToDoDto toDoDto) {
         return ResponseEntity.ok( iToDoGenericService.todoServiceCreate(toDoDto));
     }
 
+
     //List
-    //localhost:3333/todo/api/v1/list
+    //localhost:3333/todo/api/v1/list (bu uri i postmanda send edecegiz testini yapmak icin)
     @Override
     @GetMapping(value = "/list")
     public ResponseEntity<List<ToDoDto>> todoServiceList() {

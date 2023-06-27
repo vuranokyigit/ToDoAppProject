@@ -19,10 +19,12 @@ import org.webjars.NotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
-@Service //Asil is yukunu yapan yer
+
 //Lombok
 @RequiredArgsConstructor//injection
 @Log4j2
+
+@Service //Asil is yukunu yapan yer
 public class ToDoServiceImpl implements IToDoGenericService <ToDoDto, ToDoEntity>{
     //final: 1-)field: sabit 2-)Metoda: override edemezsin 3-)class extends yapamasin
     //final:field verdiginizde zorunlu olarak biz constructor olusmasini istiyoruz
@@ -32,31 +34,40 @@ public class ToDoServiceImpl implements IToDoGenericService <ToDoDto, ToDoEntity
     //###########Model Mapper#########///
     @Override
     public ToDoDto EntityToDto(ToDoEntity toDoEntity) {
-
         return modalMapperBean.modelMapperMethod().map(toDoEntity, ToDoDto.class);//sen bana entity ver ben sana tododto veriyim.
     }
     @Override
     public ToDoEntity DtoToEntity(ToDoDto toDoDto) {
-
         return modalMapperBean.modelMapperMethod().map(toDoDto, ToDoEntity.class);//sen bana dto ver ben sana entity vereyim.
     }
+
+
     //###########Crud#########///
     //Create
     @Transactional //Create, Delete, Update
     @Override
     public ToDoDto todoServiceCreate(ToDoDto toDoDto) {
+        System.out.println("tododto!!!!!!!!!!!!!!!!!!!!!!"+ toDoDto);
+
         if (toDoDto!=null){
             //kayit
+            System.out.println("tododto!!!!!!!!!!!!!!!!!!!!!!"+ toDoDto);
             ToDoEntity toDoEntityModelSaver=DtoToEntity(toDoDto);
+            System.out.println("tododto!!!!!!!!!!!!!!!!!!!!!!"+ toDoEntityModelSaver);
             ToDoEntity toDoEntity= iToDoRepository.save(toDoEntityModelSaver);
+            System.out.println("tododto!!!!!!!!!!!!!!!!!!!!!!"+ toDoDto);
             //kaydettikten sonra
             toDoDto.setId(toDoEntity.getId());
             toDoDto.setSystemDate(toDoDto.getSystemDate());
         } else if (toDoDto==null) {
             throw new NotFoundException("ToDoDto does not exist");
         }
+        System.out.println("tododto!!!!!!!!!!!!!!!!!!!!!!"+ toDoDto);
+
         return toDoDto;
     }
+
+
     //List
     @Override
     public List<ToDoDto> todoServiceList() {

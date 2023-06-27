@@ -12,7 +12,7 @@ public interface IToDoRepository extends CrudRepository<ToDoEntity, Long> {
     //Delivered query
     ToDoEntity findByHeader(String header);
     //query
-    @Query("select b from ToDoEntity b")
+    @Query("select t from ToDoEntity t")
     List<ToDoEntity> myToDoList();
 
 
