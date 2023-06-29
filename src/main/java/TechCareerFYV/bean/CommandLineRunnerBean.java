@@ -2,6 +2,8 @@ package TechCareerFYV.bean;
 
 import TechCareerFYV.business.dto.ToDoDto;
 import TechCareerFYV.business.service.impl.ToDoServiceImpl;
+import lombok.Builder;
+import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
@@ -12,10 +14,11 @@ import java.util.List;
 import java.util.UUID;
 @RequiredArgsConstructor
 @Configuration
+@Builder
+@Data
 public class CommandLineRunnerBean {
 
     private final ToDoServiceImpl toDoService;
-
 
     @Bean
     public CommandLineRunner commandLineRunnerMethod(){

@@ -10,18 +10,12 @@ import org.springframework.http.ResponseEntity;
 import java.util.List;
 
 public interface IPageableAndProfileAppApi<D> {
-
     // Add all data
     public ResponseEntity<List<ToDoDto>> speedDataService();
-
-
     //Delete all data
     public ResponseEntity<String> allDeleteService();
-
-
     //App info
     public ResponseEntity<String> appInformationService(HttpServletRequest request, HttpServletResponse response);
-
     //Pageable
     //list pageable structure
     public ResponseEntity<List<D>> todoServiceAllList();
@@ -29,7 +23,6 @@ public interface IPageableAndProfileAppApi<D> {
     public ResponseEntity <Page<D>> todoServicePagination(int currentPage, int pageSize);
     //List page and pageable
     public  ResponseEntity <Page<D>> todoServicePagination(Pageable pageable, D d);
-
 }
 
 

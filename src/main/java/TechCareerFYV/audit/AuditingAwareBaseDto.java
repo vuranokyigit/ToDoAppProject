@@ -3,9 +3,12 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.security.core.userdetails.User;
 
 import java.io.Serializable;
 import  java.util.Date;
+import java.util.Optional;
+
 //Lombok
 @Getter
 @Setter
@@ -18,12 +21,14 @@ public static final Long serialVersionUID = 1L;
     private Date  systemDate=new Date(System.currentTimeMillis());//date
     //Auditing
     @JsonIgnore
-    protected String createdUser;
+    protected String createdUser= String.valueOf("vuranok");
     @JsonIgnore
-    protected Date createdDate;
+    protected Date createdDate = systemDate;
+
     @JsonIgnore
-    protected String updateUser;
+    protected String updatedUser=String.valueOf("vuranok");;
+
     @JsonIgnore
-    protected Date updateDate;
+    protected Date updatedDate=systemDate;
 
 }

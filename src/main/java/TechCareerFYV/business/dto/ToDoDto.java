@@ -11,11 +11,7 @@ import lombok.extern.log4j.Log4j2;
 
 import java.io.Serializable;
 //Lombok
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@Log4j2
+@Data  @AllArgsConstructor  @NoArgsConstructor @Builder  @Log4j2
 
 public class ToDoDto extends AuditingAwareBaseDto implements Serializable {
     public static final Long serialVersionUID = 1L;

@@ -15,19 +15,19 @@ import java.util.Date;
 @Getter
 @Setter
 @NoArgsConstructor
-
 //JSON
-@JsonIgnoreProperties(value = {"created_date,updated_date"},allowGetters = true)//Don't follow this parameters
+@JsonIgnoreProperties(value = {"created_date,updated_date"},allowGetters =true )//Don't follow this parameters
 @EntityListeners(AuditingEntityListener.class)//auditing
 @MappedSuperclass
 public class BaseEntity extends AuditingAwareBaseEntity {
-
+    //this is the common properties for list
+    //ID
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-
+    //SYSTEM DATE
     @Temporal(TemporalType.TIMESTAMP)
     @CreationTimestamp//go to the data I created and add database immediately
     private Date systemDate;
+
 }

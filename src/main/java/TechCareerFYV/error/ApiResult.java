@@ -18,7 +18,6 @@ import java.util.Map;
 //The @Log4j2 annotation ensures that the class has a Log4j 2 generated logger object. In this way, you can easily perform logging operations in the classroom.
 @JsonInclude(JsonInclude.Include.NON_NULL)
 //Let the backend show the full data on the frontend
-
 public class ApiResult {
     private int status;
     private String error;
@@ -26,7 +25,6 @@ public class ApiResult {
     private  String path;
     private Date createdDate;
     private Map<String, String> validationErrors;
-
     public ApiResult(){
     }
     public ApiResult(int status, String error, String message, String path){
@@ -34,13 +32,10 @@ public class ApiResult {
         this.error = error;
         this.message = message;
         this.path = path;
-
     }
     public ApiResult(int status, String message, String path){
         this.status = status;
         this.message = message;
         this.path = path;
-
     }
-
 }

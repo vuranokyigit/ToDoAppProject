@@ -9,6 +9,7 @@ public class AuditorAwareBean {
 
     @Bean
     public AuditorAware<String> auditorAwareMethod(){
+
         return new AuditorAwareImpl();
     }
 }

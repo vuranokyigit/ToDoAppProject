@@ -19,16 +19,12 @@ import java.util.Map;
 //LOMBOK
 @Log4j2
 @RequiredArgsConstructor
-
 // from SpringBoot default error to customize
 @RestController
 @CrossOrigin(origins = ReactURL.REACT_URL)// @CrossOrigin(origins = "http://localhost:3000")
 public class CustomErrorHandleWebRequest implements ErrorController {
-
     // INJECTION
     private final ErrorAttributes errorAttributes;
-
-
     // http://localhost:3333/error
     // from spring /error catch custom handle
     @RequestMapping("/error")
@@ -37,17 +33,14 @@ public class CustomErrorHandleWebRequest implements ErrorController {
         int status;
         String message, path;
         ApiResult apiResult;
-
         //Spring 2.3>=
         Map<String, Object> attributes = this.errorAttributes.getErrorAttributes(
                 webRequest, ErrorAttributeOptions.of(ErrorAttributeOptions.Include.MESSAGE, ErrorAttributeOptions.Include.BINDING_ERRORS)
         ); //end attributes
-
         status = (int) attributes.get("status");
         message = (String) attributes.get("message");
         path = (String) attributes.get("path");
         apiResult = new ApiResult(status, path, message);
-
         //if attribute include apiResult
         if (attributes.containsKey("errors")) {
             List<FieldError> fieldErrorList = (List) attributes.get("errors");

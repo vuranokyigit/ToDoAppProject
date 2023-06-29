@@ -15,59 +15,45 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.webjars.NotFoundException;
-
 import java.util.ArrayList;
 import java.util.List;
-
-
 //Lombok
 @RequiredArgsConstructor//injection
 @Log4j2
-
-@Service //Asil is yukunu yapan yer
+//Asil is yukunu yapan yer
+@Service
 public class ToDoServiceImpl implements IToDoGenericService <ToDoDto, ToDoEntity>{
-    //final: 1-)field: sabit 2-)Metoda: override edemezsin 3-)class extends yapamasin
+    //final: 1-)field: constant 2-)To method: there is no override  3-)class extends not permiss
     //final:field verdiginizde zorunlu olarak biz constructor olusmasini istiyoruz
     private final ModalMapperBean modalMapperBean;
-    //Database islemleri icin
+    //Database
     private final IToDoRepository iToDoRepository;
     //###########Model Mapper#########///
     @Override
     public ToDoDto EntityToDto(ToDoEntity toDoEntity) {
-        return modalMapperBean.modelMapperMethod().map(toDoEntity, ToDoDto.class);//sen bana entity ver ben sana tododto veriyim.
+        return modalMapperBean.modelMapperMethod().map(toDoEntity, ToDoDto.class);//entity to dto
     }
     @Override
     public ToDoEntity DtoToEntity(ToDoDto toDoDto) {
-        return modalMapperBean.modelMapperMethod().map(toDoDto, ToDoEntity.class);//sen bana dto ver ben sana entity vereyim.
+        return modalMapperBean.modelMapperMethod().map(toDoDto, ToDoEntity.class);//dto to entity
     }
-
-
     //###########Crud#########///
     //Create
     @Transactional //Create, Delete, Update
     @Override
     public ToDoDto todoServiceCreate(ToDoDto toDoDto) {
-        System.out.println("tododto!!!!!!!!!!!!!!!!!!!!!!"+ toDoDto);
-
-        if (toDoDto!=null){
-            //kayit
-            System.out.println("tododto!!!!!!!!!!!!!!!!!!!!!!"+ toDoDto);
-            ToDoEntity toDoEntityModelSaver=DtoToEntity(toDoDto);
-            System.out.println("tododto!!!!!!!!!!!!!!!!!!!!!!"+ toDoEntityModelSaver);
-            ToDoEntity toDoEntity= iToDoRepository.save(toDoEntityModelSaver);
-            System.out.println("tododto!!!!!!!!!!!!!!!!!!!!!!"+ toDoDto);
-            //kaydettikten sonra
+        if (toDoDto != null) {
+            //Save
+            ToDoEntity toDoEntityModelSaver = DtoToEntity(toDoDto);
+            ToDoEntity toDoEntity = iToDoRepository.save(toDoEntityModelSaver);
+            //After save
             toDoDto.setId(toDoEntity.getId());
             toDoDto.setSystemDate(toDoDto.getSystemDate());
-        } else if (toDoDto==null) {
+        } else if (toDoDto == null) {
             throw new NotFoundException("ToDoDto does not exist");
         }
-        System.out.println("tododto!!!!!!!!!!!!!!!!!!!!!!"+ toDoDto);
-
         return toDoDto;
     }
-
-
     //List
     @Override
     public List<ToDoDto> todoServiceList() {
@@ -75,11 +61,10 @@ public class ToDoServiceImpl implements IToDoGenericService <ToDoDto, ToDoEntity
         Iterable<ToDoEntity> toDoEntityIterable=iToDoRepository.findAll();
         List<ToDoDto> list = new ArrayList<>();
         //her bir elemana for ile eris
-        for (ToDoEntity entity: toDoEntityIterable){
+        for (ToDoEntity entity: toDoEntityIterable) {
             ToDoDto toDoDto = EntityToDto(entity);
             list.add(toDoDto);
         }
-        //listi dondur
         return list;
     }
     //Find
@@ -90,13 +75,12 @@ public class ToDoServiceImpl implements IToDoGenericService <ToDoDto, ToDoEntity
              toDoEntity= iToDoRepository.findById(id).orElseThrow(
                     ()->{
                         return new BadRequestException((id+ "nolu id bulunamadi"));
-                    }
+                    }//arrow function
             );//optional istedigi icin orElseThrow() from optional lib. eklemesi yaptik
             //orElseThrow()-> veri varsa veriyi yoksa belirledigim throwu gonder
         }else if (id==null){
             throw new BadRequestException(id+" ToDoDto is null");
         }
-
         return EntityToDto(toDoEntity);
     }
     //Delete
@@ -112,18 +96,17 @@ public class ToDoServiceImpl implements IToDoGenericService <ToDoDto, ToDoEntity
     //Update
     @Transactional //Create, Delete, Update
     @Override
-    public ToDoDto todoServiceUpdateById(Long id,  ToDoDto toDoDto) {
-        ToDoDto todoDtoFindForUpdate= todoServiceFindById(id);
-        ToDoEntity toDoEntity =DtoToEntity(todoDtoFindForUpdate);
+    public ToDoDto todoServiceUpdateById(Long id,  ToDoDto  todoDto) {
+        ToDoEntity toDoEntity =DtoToEntity(todoServiceFindById(id));
         if (toDoEntity!=null){
-            toDoEntity.setId(todoDtoFindForUpdate.getId());
-            toDoEntity.setHeader(todoDtoFindForUpdate.getHeader());
-            toDoEntity.setContent(todoDtoFindForUpdate.getContent());
+            toDoEntity.setId(id);
+            toDoEntity.setHeader(todoDto.getHeader());
+            toDoEntity.setContent(todoDto.getContent());
             iToDoRepository.save(toDoEntity);
-            todoDtoFindForUpdate.setId(toDoEntity.getId());
-            todoDtoFindForUpdate.setSystemDate(todoDtoFindForUpdate.getSystemDate());
+            todoDto.setId(toDoEntity.getId());
+            todoDto.setSystemDate(todoDto.getSystemDate());
         }
-        return todoDtoFindForUpdate;
+        return EntityToDto(toDoEntity);
     }
     //###########Pageable#########///
     @Override
@@ -138,18 +121,14 @@ public class ToDoServiceImpl implements IToDoGenericService <ToDoDto, ToDoEntity
         //listi dondur
         return list;
     }
-
     @Override
     public Page<ToDoEntity> todoServicePagination(int currentPage, int pageSize) {
         return null;
     }
-
     @Override
     public Page<ToDoEntity> todoServicePagination(Pageable pageable, ToDoDto toDoDto) {
         return null;
     }
-
-
     //###########Profile#########///
     //Add multi data
     @Override
@@ -172,7 +151,6 @@ public class ToDoServiceImpl implements IToDoGenericService <ToDoDto, ToDoEntity
         log.info("Deleted");
         return "Deleted";
     }
-
     @Override
     public String appInformationService(HttpServletRequest request, HttpServletResponse response) {
         String URIInfo = request.getRequestURI();

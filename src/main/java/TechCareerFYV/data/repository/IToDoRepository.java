@@ -6,16 +6,11 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
 @Repository
 public interface IToDoRepository extends CrudRepository<ToDoEntity, Long> {
-    //Delivered query
+    //DELIVERED QUERY
     ToDoEntity findByHeader(String header);
-    //query
+    //QUERY
     @Query("select t from ToDoEntity t")
     List<ToDoEntity> myToDoList();
-
-
-    //jpql
-
 }
