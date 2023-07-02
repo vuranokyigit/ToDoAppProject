@@ -15,7 +15,7 @@ class TodoApiServices {
     // LIST
     // localhost:3333/todo/api/v1/list
     todoServiceList() {
-        return axios.get(REACT_URL+"/list");
+        return axios.get(`${REACT_URL}/list`);
     }
 
     // FIND
