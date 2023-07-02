@@ -32,9 +32,8 @@ class RouterMain extends Component {
             <Navbar />
             <br />
             <div className="container">
+              <Main/>
               <Switch>
-                <Route path="/" exact component={Main}></Route>
-                <Route path="/index" exact component={Main}></Route>
                 <Route path="/todo/create" exact component={TodoCreate}></Route>
                 <Route path="/todo/update/:id" exact component={TodoUpdate}></Route>
                 <Route path="/todo/list" exact component={TodoList}></Route>

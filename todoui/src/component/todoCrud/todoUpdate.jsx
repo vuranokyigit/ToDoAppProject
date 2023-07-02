@@ -10,7 +10,7 @@ class TodoUpdate extends Component {
         return (
             <>
                 <div className="todo-update">
-                    NAVBAR
+                    update
                 </div>
             </>
         )

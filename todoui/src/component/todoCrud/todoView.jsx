@@ -10,7 +10,7 @@ class TodoView extends Component {
         return (
             <>
                 <div className="todo-view">
-                    NAVBAR
+                    view
                 </div>
             </>
         )

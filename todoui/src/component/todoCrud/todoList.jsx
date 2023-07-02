@@ -10,7 +10,7 @@ class TodoList extends Component {
         return (
             <>
                 <div className="todo-list">
-                    NAVBAR
+                    List
                 </div>
             </>
         )
