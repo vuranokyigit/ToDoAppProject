@@ -17,7 +17,7 @@ class Footer extends Component {
         return (
             <>
                 <footer className="footer">
-                <p>&copy; {new Date().getFullYear()} Fikri Yigit Vuranok. All rights reserved.</p>              
+                <p>&copy; {new Date().getFullYear()} {this.props.copy}</p>              
                 </footer>
             </>
         )

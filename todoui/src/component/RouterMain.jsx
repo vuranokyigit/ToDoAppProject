@@ -38,7 +38,7 @@ class RouterMain extends Component {
               </Switch>
             </div>
             <br />
-            <Footer />
+            <Footer copy = "Fikri Yigit Vuranok. All rights reserved"/>
           </div>
         </Router>
       </>
