@@ -1,1 +1,137 @@
 /* there will be shown all files style  */
+
+/* ##################################################### */
+/* ### ROOT ###*/
+:root {
+    --template-bg: rgb(159, 159, 157);
+}
+
+/* ##################################################### */
+/* ### COMMON PROPERTY ###*/
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    position: relative;
+    line-height: 1.7;
+    /* font-size: 2rem; */
+    /*10*2=20px*/
+    background-color: var(--template-bg);
+    overflow-x: hidden;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    margin: 0 2rem;
+    text-align: justify;
+    /* font-size: 1.5rem!important; */
+    opacity: .9;
+    font-weight: 400;
+}
+
+i {
+    font-size: 1.5rem;
+    /* color:rgba(162, 7, 252, 0.5); */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    /* border-radius:50% 50%; profil image*/
+    border-radius: 5%;
+}
+
+img:hover {
+    cursor: pointer;
+    border: .1rem solid rgba(162, 7, 252, 0.5);
+    opacity: 0.9;
+    transition: 3s all;
+}
+
+.my_clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.icon_size {
+    font-size: 1.5rem;
+}
+
+
+.my_heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 2s all;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.flag {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* ##################################################### */
+/* ### LINE CLAMP ###*/
+.line-clamp4 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp6 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp8 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp10 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp15 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 15;
+    -webkit-box-orient: vertical;
+}
+/* ##################################################### */
+/* ### MAIN  ###*/
+
+.main .react-calendar{
+    margin-inline: auto;
+    background-color: rgb(105, 102, 216);
+    border-radius: 10px;
+
+}

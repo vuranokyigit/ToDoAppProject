@@ -1,27 +1,11 @@
 import React from 'react';
-
-import ReactDOM from 'react-dom/client';
-
-import reportWebVitals from './reportWebVitals';
-
+import ReactDOM from 'react-dom';
 import RouterMain from './component/RouterMain';
+const rootElement=document.getElementById('root');
 
-// CSS
-import './index.css';
-
-// 18n (dil)
-import './internationalization/i18nlanguage'
-
-// DOM ROOT
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-// RENDER
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <React.Fragment>
-      <RouterMain />
-    </React.Fragment>
-  </React.StrictMode>
+    <RouterMain />
+  </React.StrictMode>,
+  rootElement
 );
-
-reportWebVitals();
