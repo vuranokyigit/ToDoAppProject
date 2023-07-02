@@ -13,6 +13,12 @@ import Navbar from './navbar';
 import Main from './todocalendar/main';
 import Footer from './footer';
 
+//CRUD
+import TodoCreate from "./todoCrud/todoCreate";
+import TodoList from "./todoCrud/todoList";
+import TodoUpdate from "./todoCrud/todoUpdate";
+import TodoView from "./todoCrud/todoView";
+
 class RouterMain extends Component {
   constructor(props) {
     super(props);
@@ -29,10 +35,10 @@ class RouterMain extends Component {
               <Switch>
                 <Route path="/" exact component={Main}></Route>
                 <Route path="/index" exact component={Main}></Route>
-                <Route path="/todo/create" exact component={Main}></Route>
-                <Route path="/todo/update/:id" exact component={Main}></Route>
-                <Route path="/todo/list" exact component={Main}></Route>
-                <Route path="/todo/view/:id" exact component={Main}></Route>
+                <Route path="/todo/create" exact component={TodoCreate}></Route>
+                <Route path="/todo/update/:id" exact component={TodoUpdate}></Route>
+                <Route path="/todo/list" exact component={TodoList}></Route>
+                <Route path="/todo/view/:id" exact component={TodoView}></Route>
                 {/**if user send bad request this page goes to main page */}
                 <Redirect to="/"/> 
               </Switch>
