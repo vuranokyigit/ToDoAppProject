@@ -16,9 +16,9 @@ class Footer extends Component {
     render() {
         return (
             <>
-                <div className="footer">
-                    FOOTER
-                </div>
+                <footer className="footer">
+                <p>&copy; {new Date().getFullYear()} Fikri Yigit Vuranok. All rights reserved.</p>              
+                </footer>
             </>
         )
     }

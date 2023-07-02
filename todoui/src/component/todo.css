@@ -135,3 +135,10 @@ img:hover {
     border-radius: 10px;
 
 }
+/* ##################################################### */
+/* ### FOOTER  ###*/
+.footer p{
+    text-align: center;
+    padding-top: 350px;
+    bottom: 0;
+}
