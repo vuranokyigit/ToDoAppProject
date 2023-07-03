@@ -910,3 +910,287 @@
 2023-07-03T10:11:22.691+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
 2023-07-03T10:11:22.694+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 00093e83-19ca-4f30-97dd-1518a1878e01, content=content 023eb2b1-2d25-4350-a3f5 (truncated)...]
 2023-07-03T10:11:22.699+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T10:30:55.410+03:00 DEBUG 36728 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T10:30:55.417+03:00 DEBUG 36728 --- [http-nio-3333-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T10:30:55.500+03:00 DEBUG 36728 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T10:30:55.504+03:00 DEBUG 36728 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 00093e83-19ca-4f30-97dd-1518a1878e01, content=content 023eb2b1-2d25-4350-a3f5 (truncated)...]
+2023-07-03T10:30:55.524+03:00 DEBUG 36728 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T10:37:59.950+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T10:37:59.966+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T10:38:00.068+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T10:38:00.069+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 00093e83-19ca-4f30-97dd-1518a1878e01, content=content 023eb2b1-2d25-4350-a3f5 (truncated)...]
+2023-07-03T10:38:00.077+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T10:45:50.460+03:00 DEBUG 36728 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T10:45:50.466+03:00 DEBUG 36728 --- [http-nio-3333-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T10:45:50.509+03:00 DEBUG 36728 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T10:45:50.510+03:00 DEBUG 36728 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 00093e83-19ca-4f30-97dd-1518a1878e01, content=content 023eb2b1-2d25-4350-a3f5 (truncated)...]
+2023-07-03T10:45:50.525+03:00 DEBUG 36728 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T10:50:35.753+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T10:50:35.760+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T10:50:35.802+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T10:50:35.803+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 00093e83-19ca-4f30-97dd-1518a1878e01, content=content 023eb2b1-2d25-4350-a3f5 (truncated)...]
+2023-07-03T10:50:35.809+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T10:51:52.288+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/todo/api/v1/create", parameters={}
+2023-07-03T10:51:52.290+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceCreate(ToDoDto)
+2023-07-03T10:51:52.734+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ToDoDto(header=null, content=null)]
+2023-07-03T10:51:53.111+03:00  WARN 36728 --- [http-nio-3333-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> TechCareerFYV.controller.api.impl.ToDoApiImpl.todoServiceCreate(TechCareerFYV.business.dto.ToDoDto) with 2 errors: [Field error in object 'toDoDto' on field 'header': rejected value [null]; codes [NotEmpty.toDoDto.header,NotEmpty.header,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [toDoDto.header,header]; arguments []; default message [header]]; default message [Header cannot be null]] [Field error in object 'toDoDto' on field 'content': rejected value [null]; codes [NotEmpty.toDoDto.content,NotEmpty.content,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [toDoDto.content,content]; arguments []; default message [content]]; default message [Content cannot be null]] ]
+2023-07-03T10:51:53.116+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2023-07-03T10:51:53.123+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2023-07-03T10:51:53.127+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.error.CustomErrorHandleWebRequest#handleError(WebRequest)
+2023-07-03T10:51:53.143+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T10:51:53.144+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(status=400, error=null, message=/todo/api/v1/create, path=Validation failed for object='to (truncated)...]
+2023-07-03T10:51:53.150+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2023-07-03T10:52:01.937+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/todo/api/v1/create", parameters={}
+2023-07-03T10:52:01.937+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceCreate(ToDoDto)
+2023-07-03T10:52:01.938+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ToDoDto(header=aksjd, content=aksjdhasjd)]
+2023-07-03T10:52:01.940+03:00  WARN 36728 --- [http-nio-3333-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> TechCareerFYV.controller.api.impl.ToDoApiImpl.todoServiceCreate(TechCareerFYV.business.dto.ToDoDto): [Field error in object 'toDoDto' on field 'header': rejected value [aksjd]; codes [Size.toDoDto.header,Size.header,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [toDoDto.header,header]; arguments []; default message [header],2147483647,10]; default message [title must be at least 10 characters.]] ]
+2023-07-03T10:52:01.940+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2023-07-03T10:52:01.940+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2023-07-03T10:52:01.940+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.error.CustomErrorHandleWebRequest#handleError(WebRequest)
+2023-07-03T10:52:01.941+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T10:52:01.941+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(status=400, error=null, message=/todo/api/v1/create, path=Validation failed for object='to (truncated)...]
+2023-07-03T10:52:01.942+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2023-07-03T10:52:12.721+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/todo/api/v1/create", parameters={}
+2023-07-03T10:52:12.722+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceCreate(ToDoDto)
+2023-07-03T10:52:12.723+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ToDoDto(header=aksjdasdad, content=aksjsdjhfbskdjfbksfddhasjd)]
+2023-07-03T10:52:12.788+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T10:52:12.789+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=aksjdasdad, content=aksjsdjhfbskdjfbksfddhasjd)]
+2023-07-03T10:52:12.793+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T10:52:12.834+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T10:52:12.838+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T10:52:12.856+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T10:52:12.856+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 00093e83-19ca-4f30-97dd-1518a1878e01, content=content 023eb2b1-2d25-4350-a3f5 (truncated)...]
+2023-07-03T10:52:12.857+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T10:57:48.418+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : DELETE "/todo/api/v1/delete/11", parameters={}
+2023-07-03T10:57:48.425+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceDeleteById(Long)
+2023-07-03T10:57:48.501+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T10:57:48.504+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=aksjdasdad, content=aksjsdjhfbskdjfbksfddhasjd)]
+2023-07-03T10:57:48.508+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T10:58:14.164+03:00 DEBUG 36728 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/todo/api/v1/create", parameters={}
+2023-07-03T10:58:14.165+03:00 DEBUG 36728 --- [http-nio-3333-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceCreate(ToDoDto)
+2023-07-03T10:58:14.170+03:00 DEBUG 36728 --- [http-nio-3333-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ToDoDto(header=bulasiklari yika, content=difhshs)]
+2023-07-03T10:58:14.198+03:00 DEBUG 36728 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T10:58:14.198+03:00 DEBUG 36728 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=bulasiklari yika, content=difhshs)]
+2023-07-03T10:58:14.201+03:00 DEBUG 36728 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T10:58:14.243+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T10:58:14.244+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T10:58:14.263+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T10:58:14.263+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 00093e83-19ca-4f30-97dd-1518a1878e01, content=content 023eb2b1-2d25-4350-a3f5 (truncated)...]
+2023-07-03T10:58:14.265+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T10:58:24.748+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : DELETE "/todo/api/v1/delete/12", parameters={}
+2023-07-03T10:58:24.749+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceDeleteById(Long)
+2023-07-03T10:58:24.756+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T10:58:24.757+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=bulasiklari yika, content=difhshs)]
+2023-07-03T10:58:24.757+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T10:58:29.494+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T10:58:29.501+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T10:58:29.509+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T10:58:29.509+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 00093e83-19ca-4f30-97dd-1518a1878e01, content=content 023eb2b1-2d25-4350-a3f5 (truncated)...]
+2023-07-03T10:58:29.510+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T10:59:07.041+03:00  INFO 36728 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 12 class path changes (0 additions, 0 deletions, 12 modifications)
+2023-07-03T10:59:07.132+03:00  INFO 36728 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-03T10:59:07.241+03:00  INFO 36728 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-03T10:59:07.244+03:00  INFO 36728 --- [Thread-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-03T10:59:07.306+03:00  INFO 36728 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-03T10:59:07.374+03:00  INFO 36728 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-03T10:59:07.389+03:00  INFO 36728 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-03T10:59:08.004+03:00  INFO 36728 --- [restartedMain] T.ToDoAppProjectApplication              : Starting ToDoAppProjectApplication using Java 20.0.1 with PID 36728 (/Users/fikriyigitvuranok/Downloads/ToDoAppProject/target/classes started by fikriyigitvuranok in /Users/fikriyigitvuranok/Downloads/ToDoAppProject)
+2023-07-03T10:59:08.005+03:00  INFO 36728 --- [restartedMain] T.ToDoAppProjectApplication              : The following 1 profile is active: "react"
+2023-07-03T10:59:09.476+03:00  INFO 36728 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-03T10:59:09.515+03:00  INFO 36728 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interfaces.
+2023-07-03T10:59:09.942+03:00  INFO 36728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3333 (http)
+2023-07-03T10:59:09.943+03:00  INFO 36728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-03T10:59:09.944+03:00  INFO 36728 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-07-03T10:59:09.994+03:00  INFO 36728 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-03T10:59:09.994+03:00  INFO 36728 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1973 ms
+2023-07-03T10:59:10.137+03:00  INFO 36728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-07-03T10:59:10.148+03:00  INFO 36728 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn53: url=jdbc:h2:file:./memory_persist/todo user=
+2023-07-03T10:59:10.148+03:00  INFO 36728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-07-03T10:59:10.149+03:00  INFO 36728 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/todo'
+2023-07-03T10:59:10.183+03:00 DEBUG 36728 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-07-03T10:59:10.183+03:00 DEBUG 36728 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-07-03T10:59:10.264+03:00  INFO 36728 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-03T10:59:10.470+03:00  INFO 36728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-03T10:59:10.890+03:00  WARN 36728 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-03T10:59:11.039+03:00 DEBUG 36728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-03T10:59:11.047+03:00  INFO 36728 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-07-03T10:59:11.081+03:00 DEBUG 36728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2023-07-03T10:59:11.358+03:00 DEBUG 36728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-07-03T10:59:11.372+03:00 DEBUG 36728 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-03T10:59:11.692+03:00  INFO 36728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-03T10:59:11.743+03:00  INFO 36728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3333 (http) with context path ''
+2023-07-03T10:59:11.864+03:00  INFO 36728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2023-07-03T10:59:11.865+03:00  INFO 36728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-03T10:59:11.866+03:00  INFO 36728 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-07-03T10:59:11.897+03:00  INFO 36728 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-07-03T10:59:11.897+03:00  INFO 36728 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 152 ms
+2023-07-03T10:59:11.926+03:00  INFO 36728 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/admin'
+2023-07-03T10:59:11.942+03:00 DEBUG 36728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2023-07-03T10:59:12.176+03:00 DEBUG 36728 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-07-03T10:59:12.192+03:00 DEBUG 36728 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-03T10:59:12.202+03:00  INFO 36728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2023-07-03T10:59:12.220+03:00  INFO 36728 --- [restartedMain] T.ToDoAppProjectApplication              : Started ToDoAppProjectApplication in 4.321 seconds (process running for 8639.627)
+2023-07-03T10:59:12.252+03:00  INFO 36728 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-07-03T10:59:50.815+03:00  INFO 36728 --- [http-nio-3333-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-03T10:59:50.818+03:00  INFO 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-03T10:59:50.819+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-07-03T10:59:50.819+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-07-03T10:59:50.819+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-07-03T10:59:50.833+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@93d712a
+2023-07-03T10:59:50.834+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@10d70a13
+2023-07-03T10:59:50.835+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-07-03T10:59:50.835+03:00  INFO 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2023-07-03T10:59:50.842+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T10:59:50.844+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T10:59:50.919+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-07-03T10:59:50.921+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 1cfdea0c-a1f0-473a-be46-94da2a57c0d8, content=content 45230283-432d-4414-9e9f (truncated)...]
+2023-07-03T10:59:50.968+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T11:00:08.499+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/todo/list", parameters={}
+2023-07-03T11:00:08.519+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-07-03T11:00:08.526+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-07-03T11:00:08.527+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-07-03T11:00:08.527+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-07-03T11:00:08.527+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.error.CustomErrorHandleWebRequest#handleError(WebRequest)
+2023-07-03T11:00:08.534+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-07-03T11:00:08.541+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(status=404, error=null, message=/todo/list, path=No message available, createdDate=null, v (truncated)...]
+2023-07-03T11:00:08.543+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-07-03T11:00:14.814+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T11:00:14.814+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T11:00:14.818+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-07-03T11:00:14.818+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 1cfdea0c-a1f0-473a-be46-94da2a57c0d8, content=content 45230283-432d-4414-9e9f (truncated)...]
+2023-07-03T11:00:14.819+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T11:17:32.324+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m21s922ms).
+2023-07-03T11:23:28.993+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m26s639ms).
+2023-07-03T11:30:21.235+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m22s192ms).
+2023-07-03T11:33:00.464+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1m5s80ms).
+2023-07-03T11:39:22.605+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m22s136ms).
+2023-07-03T11:45:19.393+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m26s779ms).
+2023-07-03T11:51:16.125+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m26s723ms).
+2023-07-03T11:56:39.946+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m23s821ms).
+2023-07-03T12:02:36.737+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m26s780ms).
+2023-07-03T12:08:33.550+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m26s791ms).
+2023-07-03T12:14:18.306+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m14s744ms).
+2023-07-03T12:20:15.065+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m26s725ms).
+2023-07-03T12:26:11.179+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m26s98ms).
+2023-07-03T12:33:07.886+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m26s697ms).
+2023-07-03T12:38:35.767+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m27s881ms).
+2023-07-03T12:44:32.968+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m26s832ms).
+2023-07-03T12:50:29.825+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m26s844ms).
+2023-07-03T12:56:25.507+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m25s673ms).
+2023-07-03T13:01:49.282+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m23s775ms).
+2023-07-03T13:10:14.797+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m25s467ms).
+2023-07-03T13:15:41.790+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m26s993ms).
+2023-07-03T13:21:38.600+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m26s798ms).
+2023-07-03T13:24:52.570+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2m43s942ms).
+2023-07-03T15:15:52.360+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1h41m29s699ms).
+2023-07-03T15:27:15.605+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=11m23s251ms).
+2023-07-03T16:44:39.853+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m53s786ms).
+2023-07-03T17:54:39.406+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1h9m59s589ms).
+2023-07-03T18:01:01.294+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m51s876ms).
+2023-07-03T18:15:08.864+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=10m47s781ms).
+2023-07-03T19:11:36.133+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=56m27s270ms).
+2023-07-03T19:18:32.672+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/todo/api/v1/create", parameters={}
+2023-07-03T19:18:32.691+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceCreate(ToDoDto)
+2023-07-03T19:18:32.886+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ToDoDto(header=Yemek, content=kiymali makarna yapacagim)]
+2023-07-03T19:18:33.152+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T19:18:33.161+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=Yemek, content=kiymali makarna yapacagim)]
+2023-07-03T19:18:33.189+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T19:18:33.275+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T19:18:33.276+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T19:18:33.297+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T19:18:33.297+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 1cfdea0c-a1f0-473a-be46-94da2a57c0d8, content=content 45230283-432d-4414-9e9f (truncated)...]
+2023-07-03T19:18:33.299+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T19:29:18.351+03:00  WARN 36728 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1m6s973ms).
+2023-07-03T19:38:34.662+03:00 DEBUG 36728 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/todo/api/v1/create", parameters={}
+2023-07-03T19:38:34.715+03:00 DEBUG 36728 --- [http-nio-3333-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceCreate(ToDoDto)
+2023-07-03T19:38:34.814+03:00 DEBUG 36728 --- [http-nio-3333-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ToDoDto(header=null, content=null)]
+2023-07-03T19:38:35.075+03:00  WARN 36728 --- [http-nio-3333-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> TechCareerFYV.controller.api.impl.ToDoApiImpl.todoServiceCreate(TechCareerFYV.business.dto.ToDoDto) with 2 errors: [Field error in object 'toDoDto' on field 'header': rejected value [null]; codes [NotEmpty.toDoDto.header,NotEmpty.header,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [toDoDto.header,header]; arguments []; default message [header]]; default message [Header cannot be null]] [Field error in object 'toDoDto' on field 'content': rejected value [null]; codes [NotEmpty.toDoDto.content,NotEmpty.content,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [toDoDto.content,content]; arguments []; default message [content]]; default message [Content cannot be null]] ]
+2023-07-03T19:38:35.080+03:00 DEBUG 36728 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2023-07-03T19:38:35.088+03:00 DEBUG 36728 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2023-07-03T19:38:35.088+03:00 DEBUG 36728 --- [http-nio-3333-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.error.CustomErrorHandleWebRequest#handleError(WebRequest)
+2023-07-03T19:38:35.098+03:00 DEBUG 36728 --- [http-nio-3333-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T19:38:35.099+03:00 DEBUG 36728 --- [http-nio-3333-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(status=400, error=null, message=/todo/api/v1/create, path=Validation failed for object='to (truncated)...]
+2023-07-03T19:38:35.111+03:00 DEBUG 36728 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2023-07-03T19:38:40.869+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/todo/api/v1/create", parameters={}
+2023-07-03T19:38:40.869+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceCreate(ToDoDto)
+2023-07-03T19:38:40.871+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ToDoDto(header=sdfgh, content=sdfghdfghj)]
+2023-07-03T19:38:40.964+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T19:38:40.964+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=sdfgh, content=sdfghdfghj)]
+2023-07-03T19:38:40.975+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T19:39:51.176+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/todo/api/v1/create", parameters={}
+2023-07-03T19:39:51.182+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceCreate(ToDoDto)
+2023-07-03T19:39:51.195+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ToDoDto(header=sdfgh, content=frtgyhjk)]
+2023-07-03T19:39:51.227+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T19:39:51.228+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=sdfgh, content=frtgyhjk)]
+2023-07-03T19:39:51.231+03:00 DEBUG 36728 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T19:45:42.630+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/todo/api/v1/create", parameters={}
+2023-07-03T19:45:42.645+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceCreate(ToDoDto)
+2023-07-03T19:45:42.666+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ToDoDto(header=sdf, content=sdfsdfsdf)]
+2023-07-03T19:45:42.693+03:00  WARN 36728 --- [http-nio-3333-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> TechCareerFYV.controller.api.impl.ToDoApiImpl.todoServiceCreate(TechCareerFYV.business.dto.ToDoDto): [Field error in object 'toDoDto' on field 'header': rejected value [sdf]; codes [Size.toDoDto.header,Size.header,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [toDoDto.header,header]; arguments []; default message [header],2147483647,4]; default message [title must be at least 4 characters.]] ]
+2023-07-03T19:45:42.695+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2023-07-03T19:45:42.699+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2023-07-03T19:45:42.699+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.error.CustomErrorHandleWebRequest#handleError(WebRequest)
+2023-07-03T19:45:42.704+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T19:45:42.705+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(status=400, error=null, message=/todo/api/v1/create, path=Validation failed for object='to (truncated)...]
+2023-07-03T19:45:42.708+03:00 DEBUG 36728 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2023-07-03T19:45:46.705+03:00 DEBUG 36728 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/todo/api/v1/create", parameters={}
+2023-07-03T19:45:46.706+03:00 DEBUG 36728 --- [http-nio-3333-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceCreate(ToDoDto)
+2023-07-03T19:45:46.709+03:00 DEBUG 36728 --- [http-nio-3333-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ToDoDto(header=sdfd, content=sdfsdfsdf)]
+2023-07-03T19:45:46.794+03:00 DEBUG 36728 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T19:45:46.795+03:00 DEBUG 36728 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=sdfd, content=sdfsdfsdf)]
+2023-07-03T19:45:46.799+03:00 DEBUG 36728 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T19:47:32.428+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/todo/api/v1/create", parameters={}
+2023-07-03T19:47:32.435+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceCreate(ToDoDto)
+2023-07-03T19:47:32.452+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ToDoDto(header=skjdf, content=skjdnflsdfsdf)]
+2023-07-03T19:47:32.491+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T19:47:32.492+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=skjdf, content=skjdnflsdfsdf)]
+2023-07-03T19:47:32.497+03:00 DEBUG 36728 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T19:48:59.092+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/todo/api/v1/create", parameters={}
+2023-07-03T19:48:59.095+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceCreate(ToDoDto)
+2023-07-03T19:48:59.098+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ToDoDto(header=sdfd, content=sdfsdfsdf)]
+2023-07-03T19:48:59.103+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T19:48:59.103+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=sdfd, content=sdfsdfsdf)]
+2023-07-03T19:48:59.105+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T19:53:54.772+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/todo/api/v1/create", parameters={}
+2023-07-03T19:53:54.780+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceCreate(ToDoDto)
+2023-07-03T19:53:54.795+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ToDoDto(header=dsdfsfd, content=sdfsdsfddsf)]
+2023-07-03T19:53:54.824+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T19:53:54.825+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=dsdfsfd, content=sdfsdsfddsf)]
+2023-07-03T19:53:54.831+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T19:56:13.913+03:00 DEBUG 36728 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/todo/api/v1/create", parameters={}
+2023-07-03T19:56:13.919+03:00 DEBUG 36728 --- [http-nio-3333-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceCreate(ToDoDto)
+2023-07-03T19:56:13.939+03:00 DEBUG 36728 --- [http-nio-3333-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ToDoDto(header=adfsdf, content=sdfsdfsf)]
+2023-07-03T19:56:13.994+03:00 DEBUG 36728 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T19:56:13.995+03:00 DEBUG 36728 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=adfsdf, content=sdfsdfsf)]
+2023-07-03T19:56:13.998+03:00 DEBUG 36728 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T19:56:14.059+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T19:56:14.061+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T19:56:14.220+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T19:56:14.222+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 1cfdea0c-a1f0-473a-be46-94da2a57c0d8, content=content 45230283-432d-4414-9e9f (truncated)...]
+2023-07-03T19:56:14.227+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T19:57:06.524+03:00 DEBUG 36728 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/todo/api/v1/create", parameters={}
+2023-07-03T19:57:06.525+03:00 DEBUG 36728 --- [http-nio-3333-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceCreate(ToDoDto)
+2023-07-03T19:57:06.528+03:00 DEBUG 36728 --- [http-nio-3333-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ToDoDto(header=sdfsfd, content=sdfsdfsdfsfd)]
+2023-07-03T19:57:06.535+03:00 DEBUG 36728 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T19:57:06.535+03:00 DEBUG 36728 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=sdfsfd, content=sdfsdfsdfsfd)]
+2023-07-03T19:57:06.537+03:00 DEBUG 36728 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T19:57:06.559+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T19:57:06.560+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T19:57:06.567+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T19:57:06.567+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 1cfdea0c-a1f0-473a-be46-94da2a57c0d8, content=content 45230283-432d-4414-9e9f (truncated)...]
+2023-07-03T19:57:06.567+03:00 DEBUG 36728 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T19:57:25.211+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T19:57:25.212+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T19:57:25.225+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T19:57:25.225+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 1cfdea0c-a1f0-473a-be46-94da2a57c0d8, content=content 45230283-432d-4414-9e9f (truncated)...]
+2023-07-03T19:57:25.227+03:00 DEBUG 36728 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T19:57:28.359+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : DELETE "/todo/api/v1/delete/19", parameters={}
+2023-07-03T19:57:28.362+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceDeleteById(Long)
+2023-07-03T19:57:28.639+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T19:57:28.640+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=sdfsfd, content=sdfsdfsdfsfd)]
+2023-07-03T19:57:28.641+03:00 DEBUG 36728 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T19:57:33.309+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : DELETE "/todo/api/v1/delete/18", parameters={}
+2023-07-03T19:57:33.309+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceDeleteById(Long)
+2023-07-03T19:57:33.314+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T19:57:33.315+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=adfsdf, content=sdfsdfsf)]
+2023-07-03T19:57:33.315+03:00 DEBUG 36728 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

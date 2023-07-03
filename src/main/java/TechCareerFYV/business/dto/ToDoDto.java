@@ -17,7 +17,7 @@ public class ToDoDto extends AuditingAwareBaseDto implements Serializable {
     public static final Long serialVersionUID = 1L;
 
     @NotEmpty(message = "{todo.header.validation.constraints.NotNull.message}")
-    @Size(min = 10, message = "{todo.header.least.validation.constraints.NotNull.message}")
+    @Size(min = 4, message = "{todo.header.least.validation.constraints.NotNull.message}")
     private String header;
     @NotEmpty(message = "{todo.content.validation.constraints.NotNull.message}")
     @Size(max = 50, message = "{todo.content.least.validation.constraints.NotNull.message}")

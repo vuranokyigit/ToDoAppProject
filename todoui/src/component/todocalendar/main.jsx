@@ -15,22 +15,9 @@ import TodoCreate from "../todoCrud/todoCreate";
 function Main() {
   const [date, setDate] = useState(new Date());
   const [showTodoTable, setShowTodoTable] = useState(false);
-  const [todoList, setTodoList] = useState([]);
 
   const create = () => {
     setShowTodoTable(true);
-  };
-
-  const del = (id) => {
-    todoapiService
-      .todoServiceDeleteById(id)
-      .then((response) => {
-        const updatedList = todoList.filter((todo) => todo.id !== id);
-        setTodoList(updatedList);
-      })
-      .catch((error) => {
-        console.error("Delete failed", error);
-      });
   };
 
   return (
@@ -51,3 +38,4 @@ function Main() {
 }
 
 export default Main;
+

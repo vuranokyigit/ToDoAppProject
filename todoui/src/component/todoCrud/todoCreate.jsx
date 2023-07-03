@@ -1,21 +1,18 @@
 import React, { Component } from "react";
 import todoapiService from "../../service/todoapiService";
+import { withRouter } from "react-router-dom";
 
 class TodoCreate extends Component {
   constructor(props) {
     super(props);
-    // State
     this.state = {
-      header: null,
-      content: null,
-      toDoDto: {},
-      isRead: false,
+      header: "",
+      content: "",
+      validationErrors: {},
       spinnerData: false,
       multipleRequest: false,
-      validationErrors: {}
     };
 
-    // Bind event handler functions to the component instance
     this.onChangeInputValue = this.onChangeInputValue.bind(this);
     this.todoCreateAdd = this.todoCreateAdd.bind(this);
   }
@@ -26,7 +23,7 @@ class TodoCreate extends Component {
     backendHandleError[name] = undefined;
     this.setState({
       [name]: value,
-      backendHandleError
+      validationErrors: backendHandleError,
     });
   }
 
@@ -36,30 +33,30 @@ class TodoCreate extends Component {
     const { header, content } = this.state;
     const toDoDto = {
       header,
-      content
+      content,
     };
 
     try {
       this.setState({
         spinnerData: true,
-        multipleRequest: false
+        multipleRequest: false,
       });
 
       const response = await todoapiService.todoServiceCreate(toDoDto);
 
       if (response.status === 200) {
         this.setState({
-          multipleRequest: true
+          multipleRequest: true,
         });
         this.props.history.push("/todo/list");
       }
     } catch (err) {
       console.error(err);
       this.setState({ spinnerData: true });
-      const backendError = err.response.data.validationErrors;
+      const backendError = err.response && err.response.data.validationErrors;
       if (backendError) {
         this.setState({
-          validationErrors: backendError
+          validationErrors: backendError,
         });
         console.log(backendError);
       }
@@ -68,24 +65,14 @@ class TodoCreate extends Component {
   }
 
   render() {
-    const { validationErrors, isRead, spinnerData, multipleRequest } =
-      this.state;
-    const { header, content } = validationErrors;
-
-    const addButton = (
-      <div
-        className="btn btn-primary btn-block mb-4"
-        onClick={this.todoCreateAdd}
-        disabled={!isRead || spinnerData}
-      >
-        ADD TASK
-        {spinnerData && (
-          <span className="spinner-border spinner-border-sm" role="status"></span>
-        )}
-      </div>
-      
-    );
-
+    const {
+      header,
+      content,
+      validationErrors,
+      spinnerData,
+      multipleRequest,
+    } = this.state;
+    const { header: headerError, content: contentError } = validationErrors;
 
     return (
       <>
@@ -99,11 +86,11 @@ class TodoCreate extends Component {
                   type="text"
                   id="todo"
                   name="header"
-                  value={this.state.header || ""}
+                  value={header}
                   onChange={this.onChangeInputValue}
                   placeholder="Enter a new task"
                 />
-                {header && <span className="error">{header}</span>}
+                {headerError && <span className="error">{headerError}</span>}
               </div>
               <div>
                 <label htmlFor="content">Content:</label>
@@ -111,13 +98,25 @@ class TodoCreate extends Component {
                   type="text"
                   id="content"
                   name="content"
-                  value={this.state.content || ""}
+                  value={content}
                   onChange={this.onChangeInputValue}
                   placeholder="Enter content"
                 />
-                {content && <span className="error">{content}</span>}
+                {contentError && <span className="error">{contentError}</span>}
               </div>
-              <button>{addButton}</button>
+              <button
+                className="btn btn-primary btn-block mb-4"
+                onClick={this.todoCreateAdd}
+                disabled={spinnerData}
+              >
+                ADD TASK
+                {spinnerData && (
+                  <span
+                    className="spinner-border spinner-border-sm"
+                    role="status"
+                  ></span>
+                )}
+              </button>
             </div>
           </div>
         </div>
@@ -126,4 +125,4 @@ class TodoCreate extends Component {
   }
 }
 
-export default TodoCreate;
+export default withRouter(TodoCreate);
