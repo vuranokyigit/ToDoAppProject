@@ -25,6 +25,7 @@ class RouterMain extends Component {
   }
 
   render() {
+   
     return (
       <>
         <Router>
@@ -32,7 +33,7 @@ class RouterMain extends Component {
             <Navbar />
             <br />
             <div className="container">
-<Main/>
+
               <Switch>
                 <Route path="/" exact component={Main}></Route>
                 <Route path="/index" component={Main}></Route>

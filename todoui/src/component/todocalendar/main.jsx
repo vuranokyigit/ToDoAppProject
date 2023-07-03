@@ -38,7 +38,7 @@ function Main() {
       <div className="main">
         <h1 className="header">TO DO CALENDAR</h1>
         <div className="calendar-container">
-          <Calendar onChange={setDate} value={date} />
+          <Calendar onChange={create} value={date} />
         </div>
         {showTodoTable && (
           <div className="text-center">
