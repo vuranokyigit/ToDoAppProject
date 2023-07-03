@@ -19,17 +19,13 @@ function TodoList() {
     //console.log(todoList.push()="/todo/create");
     const create = () => {
         // create 
-        const newTodo = "/todo/create"; // Yeni öğe
-        setTodoList([...todoList, newTodo]);
+        window.location.href = "/#/todo/create";
     };
     const update = (id) => {
         //update
         todoList.push("/todo/update/" + id);
     };
-    const view = (id) => {
-        //view
-        todoList.push(`/todo/view/${id}`);
-    };
+   
     const del = (id) => {
         // delete
         todoapiService.todoServiceDeleteById(id)
@@ -49,12 +45,12 @@ function TodoList() {
             <button
                 className="btn btn-primary"
                 onClick={create}
-                style={{ marginRight: "2rem" }}><i class="fa-solid fa-circle-plus me-3"> ADD task</i></button>
+                style={{ marginRight: "2rem" }}><i className="fa-solid fa-circle-plus me-3"> ADD task</i></button>
             {/* ALL DELETE TASK */}
             <button
                 className="btn btn-danger"
                 onClick={del}
-            ><i class="fa-solid fa-bomb">  ALL tasks delete</i></button>
+            ><i className="fa-solid fa-bomb">  ALL tasks delete</i></button>
             <table className="table table-hover table-striped">
                 <thead>
                     <tr>
@@ -63,7 +59,6 @@ function TodoList() {
                         <th>CONTENT</th>
                         <th>DATE</th>
                         <th>UPDATE</th>
-                        <th>VIEW</th>
                         <th>DELETE</th>
                     </tr>
                 </thead>
@@ -76,19 +71,17 @@ function TodoList() {
                                 <td>{todo.header}</td>
                                 <td>{todo.content}</td>
                                 <td>{todo.systemDate}</td>
-                                <td><i class="fa-solid fa-pen-to-square text-primary"
+                                <td><i className="fa-solid fa-pen-to-square text-primary"
                                     style={{ cursor: "pointer" }}
                                     onClick={() => update(todo.id)} ></i></td>
-                                <td><i class="fa-solid fa-binoculars text-dark"
-                                    style={{ cursor: "pointer" }}
-                                    onClick={() => view(todo.id)}></i></td>
-                                <td><i class="fa-solid fa-trash text-danger"
+                                
+                                <td><i className="fa-solid fa-trash text-danger"
                                     style={{ cursor: "pointer" }}
                                     onClick={() => {
                                         if (window.confirm(todo.id + "id  Sure deleted ?"))
                                             del(todo.id)
                                         else
-                                            window.alert("Silinmedi !!!");
+                                            window.alert("Not Deleted !!!");
                                     } //end function
                                     }></i></td>
                             </tr>

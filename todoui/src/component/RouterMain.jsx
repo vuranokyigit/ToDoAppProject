@@ -11,13 +11,13 @@ import './todo.css';
 //NAVBAR, MAIN, FOOTER
 import Navbar from './navbar';
 import Main from './todocalendar/main';
-import Footer from './footer';
+import Footer from "./footer";
 
 //CRUD
 import TodoCreate from "./todoCrud/todoCreate";
 import TodoList from "./todoCrud/todoList";
 import TodoUpdate from "./todoCrud/todoUpdate";
-import TodoView from "./todoCrud/todoView";
+
 
 class RouterMain extends Component {
   constructor(props) {
@@ -32,18 +32,20 @@ class RouterMain extends Component {
             <Navbar />
             <br />
             <div className="container">
-              <Main/>
+<Main/>
               <Switch>
+                <Route path="/" exact component={Main}></Route>
+                <Route path="/index" component={Main}></Route>
+
                 <Route path="/todo/create" exact component={TodoCreate}></Route>
                 <Route path="/todo/update/:id" exact component={TodoUpdate}></Route>
                 <Route path="/todo/list" exact component={TodoList}></Route>
-                <Route path="/todo/view/:id" exact component={TodoView}></Route>
                 {/**if user send bad request this page goes to main page */}
-                <Redirect to="/"/> 
+                <Redirect to="/" />
               </Switch>
             </div>
             <br />
-            <Footer copy = "Fikri Yigit Vuranok. All rights reserved"/>
+            <Footer copy="Fikri Yigit Vuranok. All rights reserved" />
           </div>
         </Router>
       </>
