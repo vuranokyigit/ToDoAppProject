@@ -204,3 +204,423 @@
 2023-07-03T02:22:28.137+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
 2023-07-03T02:22:28.137+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
 2023-07-03T02:22:28.138+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:29:08.995+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:29:09.003+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:29:09.070+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:29:09.071+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:29:09.080+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:30:40.066+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:30:40.072+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:30:40.175+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:30:40.176+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:30:40.186+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:32:08.449+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:32:08.455+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:32:08.469+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:32:08.472+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:32:08.473+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:37:05.268+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:37:05.273+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:37:05.330+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:37:05.331+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:37:05.337+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:37:22.604+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:37:22.605+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:37:22.609+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:37:22.610+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:37:22.610+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:37:35.766+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:37:35.767+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:37:35.774+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:37:35.774+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:37:35.775+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:40:52.948+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:40:52.959+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:40:53.009+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:40:53.010+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:40:53.015+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:41:05.986+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:41:05.987+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:41:05.992+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:41:05.992+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:41:05.995+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:41:27.474+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:41:27.476+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:41:27.484+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:41:27.485+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:41:27.487+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:45:10.966+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:45:10.972+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:45:11.007+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:45:11.008+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:45:11.015+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:46:27.214+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:46:27.221+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:46:27.282+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:46:27.286+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:46:27.293+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:47:15.924+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:47:15.942+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:47:15.952+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:47:15.952+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:47:15.955+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:50:09.543+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:50:09.548+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:50:09.580+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:50:09.581+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:50:09.586+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:50:32.176+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:50:32.182+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:50:32.298+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:50:32.298+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:50:32.301+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:52:07.418+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:52:07.423+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:52:07.458+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:52:07.460+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:52:07.470+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:52:43.020+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:52:43.021+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:52:43.036+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:52:43.038+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:52:43.040+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:52:45.221+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : DELETE "/todo/api/v1/delete/undefined", parameters={}
+2023-07-03T02:52:45.226+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceDeleteById(Long)
+2023-07-03T02:52:45.840+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<?> TechCareerFYV.controller.api.impl.ToDoApiImpl.todoServiceDeleteById(java.lang.Long): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "undefined"
+2023-07-03T02:52:45.885+03:00  WARN 15951 --- [http-nio-3333-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "undefined"]
+2023-07-03T02:52:45.886+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2023-07-03T02:52:45.896+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for DELETE "/error", parameters={}
+2023-07-03T02:52:45.896+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.error.CustomErrorHandleWebRequest#handleError(WebRequest)
+2023-07-03T02:52:45.911+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:52:45.913+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(status=400, error=null, message=/todo/api/v1/delete/undefined, path=Failed to convert valu (truncated)...]
+2023-07-03T02:52:45.916+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2023-07-03T02:52:46.076+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : DELETE "/todo/api/v1/delete/undefined", parameters={}
+2023-07-03T02:52:46.076+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceDeleteById(Long)
+2023-07-03T02:52:46.078+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<?> TechCareerFYV.controller.api.impl.ToDoApiImpl.todoServiceDeleteById(java.lang.Long): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "undefined"
+2023-07-03T02:52:46.078+03:00  WARN 15951 --- [http-nio-3333-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "undefined"]
+2023-07-03T02:52:46.079+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2023-07-03T02:52:46.079+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for DELETE "/error", parameters={}
+2023-07-03T02:52:46.083+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.error.CustomErrorHandleWebRequest#handleError(WebRequest)
+2023-07-03T02:52:46.084+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:52:46.084+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(status=400, error=null, message=/todo/api/v1/delete/undefined, path=Failed to convert valu (truncated)...]
+2023-07-03T02:52:46.087+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2023-07-03T02:52:46.310+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : DELETE "/todo/api/v1/delete/undefined", parameters={}
+2023-07-03T02:52:46.312+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceDeleteById(Long)
+2023-07-03T02:52:46.315+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<?> TechCareerFYV.controller.api.impl.ToDoApiImpl.todoServiceDeleteById(java.lang.Long): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "undefined"
+2023-07-03T02:52:46.316+03:00  WARN 15951 --- [http-nio-3333-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "undefined"]
+2023-07-03T02:52:46.316+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2023-07-03T02:52:46.317+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for DELETE "/error", parameters={}
+2023-07-03T02:52:46.317+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.error.CustomErrorHandleWebRequest#handleError(WebRequest)
+2023-07-03T02:52:46.323+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:52:46.323+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(status=400, error=null, message=/todo/api/v1/delete/undefined, path=Failed to convert valu (truncated)...]
+2023-07-03T02:52:46.327+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2023-07-03T02:52:46.797+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : DELETE "/todo/api/v1/delete/undefined", parameters={}
+2023-07-03T02:52:46.798+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceDeleteById(Long)
+2023-07-03T02:52:46.799+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<?> TechCareerFYV.controller.api.impl.ToDoApiImpl.todoServiceDeleteById(java.lang.Long): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "undefined"
+2023-07-03T02:52:46.800+03:00  WARN 15951 --- [http-nio-3333-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "undefined"]
+2023-07-03T02:52:46.800+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2023-07-03T02:52:46.801+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for DELETE "/error", parameters={}
+2023-07-03T02:52:46.802+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.error.CustomErrorHandleWebRequest#handleError(WebRequest)
+2023-07-03T02:52:46.804+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:52:46.804+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(status=400, error=null, message=/todo/api/v1/delete/undefined, path=Failed to convert valu (truncated)...]
+2023-07-03T02:52:46.805+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2023-07-03T02:52:47.042+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : DELETE "/todo/api/v1/delete/undefined", parameters={}
+2023-07-03T02:52:47.042+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceDeleteById(Long)
+2023-07-03T02:52:47.043+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<?> TechCareerFYV.controller.api.impl.ToDoApiImpl.todoServiceDeleteById(java.lang.Long): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "undefined"
+2023-07-03T02:52:47.044+03:00  WARN 15951 --- [http-nio-3333-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "undefined"]
+2023-07-03T02:52:47.044+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2023-07-03T02:52:47.044+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for DELETE "/error", parameters={}
+2023-07-03T02:52:47.045+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.error.CustomErrorHandleWebRequest#handleError(WebRequest)
+2023-07-03T02:52:47.046+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:52:47.046+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(status=400, error=null, message=/todo/api/v1/delete/undefined, path=Failed to convert valu (truncated)...]
+2023-07-03T02:52:47.047+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2023-07-03T02:52:52.861+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:52:52.862+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:52:52.872+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:52:52.873+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:52:52.875+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:53:12.578+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:53:12.596+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:53:12.602+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:53:12.603+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:53:12.604+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:53:48.975+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:53:48.977+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:53:48.985+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:53:48.985+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:53:48.990+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:54:07.282+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : DELETE "/todo/api/v1/delete/undefined", parameters={}
+2023-07-03T02:54:07.282+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceDeleteById(Long)
+2023-07-03T02:54:07.283+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<?> TechCareerFYV.controller.api.impl.ToDoApiImpl.todoServiceDeleteById(java.lang.Long): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "undefined"
+2023-07-03T02:54:07.284+03:00  WARN 15951 --- [http-nio-3333-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "undefined"]
+2023-07-03T02:54:07.284+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2023-07-03T02:54:07.284+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for DELETE "/error", parameters={}
+2023-07-03T02:54:07.285+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.error.CustomErrorHandleWebRequest#handleError(WebRequest)
+2023-07-03T02:54:07.286+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:54:07.286+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(status=400, error=null, message=/todo/api/v1/delete/undefined, path=Failed to convert valu (truncated)...]
+2023-07-03T02:54:07.287+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2023-07-03T02:54:41.256+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:54:41.258+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:54:41.267+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:54:41.267+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:54:41.269+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:55:02.700+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:55:02.700+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:55:02.708+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:55:02.708+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:55:02.709+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:55:15.067+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:55:15.068+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:55:15.075+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:55:15.075+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:55:15.076+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:55:16.504+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:55:16.511+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:55:16.537+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:55:16.538+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:55:16.539+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:56:44.220+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:56:44.224+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:56:44.430+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:56:44.432+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:56:44.437+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:58:25.969+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:58:25.979+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:58:26.020+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:58:26.021+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:58:26.026+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:58:33.372+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:58:33.373+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:58:33.378+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:58:33.378+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:58:33.379+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T02:59:39.599+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T02:59:39.600+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T02:59:39.609+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T02:59:39.621+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T02:59:39.622+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:01:11.211+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:01:11.219+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:01:11.266+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:01:11.266+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:01:11.273+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:04:10.751+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:04:10.755+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:04:10.818+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2023-07-03T03:04:10.823+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:04:10.831+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:05:38.573+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:05:38.574+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:05:38.579+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:05:38.580+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:05:38.581+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:06:19.427+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:06:19.432+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:06:19.469+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:06:19.470+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:06:19.475+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:06:26.113+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:06:26.114+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:06:26.121+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:06:26.122+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:06:26.125+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:06:51.417+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:06:51.418+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:06:51.426+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:06:51.427+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:06:51.427+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:06:53.222+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:06:53.223+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:06:53.229+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:06:53.230+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:06:53.231+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:08:38.794+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:08:38.799+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:08:38.835+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:08:38.837+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:08:38.841+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:10:00.231+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:10:00.232+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:10:00.241+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:10:00.241+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:10:00.242+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:10:00.278+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:10:00.279+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:10:00.284+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:10:00.284+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:10:00.286+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:10:08.826+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:10:08.827+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:10:08.839+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:10:08.849+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:10:08.855+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:10:20.620+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:10:20.621+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:10:20.631+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:10:20.632+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:10:20.634+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:15:19.729+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:15:19.734+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:15:19.790+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:15:19.792+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:15:19.798+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:16:18.063+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:16:18.064+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:16:18.071+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:16:18.072+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:16:18.073+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:20:52.061+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:20:52.067+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:20:52.186+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:20:52.189+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:20:52.195+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:21:27.120+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:21:27.122+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:21:27.130+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:21:27.131+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:21:27.132+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:21:28.750+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:21:28.751+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:21:28.767+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:21:28.768+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:21:28.771+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:22:00.072+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:22:00.072+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:22:00.079+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:22:00.079+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:22:00.082+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:23:00.261+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:23:00.265+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:23:00.297+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:23:00.298+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:23:00.302+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:23:02.831+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:23:02.831+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:23:02.834+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:23:02.834+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:23:02.834+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:23:55.704+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:23:55.706+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:23:55.725+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:23:55.725+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:23:55.726+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:26:01.877+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:26:01.883+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:26:01.917+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:26:01.918+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:26:01.922+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:27:04.996+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:27:04.997+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:27:05.011+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:27:05.029+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:27:05.031+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:27:07.394+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:27:07.395+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:27:07.400+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:27:07.401+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:27:07.401+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:27:23.707+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:27:23.708+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:27:23.718+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:27:23.719+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:27:23.719+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:33:20.730+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:33:20.737+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:33:20.796+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:33:20.805+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:33:20.817+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:37:48.549+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:37:48.555+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:37:48.586+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:37:48.586+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:37:48.591+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:37:51.687+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:37:51.687+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:37:51.693+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:37:51.693+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:37:51.694+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:39:56.716+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:39:56.721+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:39:56.761+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:39:56.761+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:39:56.766+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:39:59.320+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:39:59.321+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:39:59.329+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:39:59.350+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:39:59.350+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:40:08.695+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:40:08.696+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:40:08.706+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:40:08.707+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:40:08.708+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:40:11.255+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:40:11.255+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:40:11.261+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:40:11.262+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:40:11.263+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:40:46.752+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:40:46.771+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:40:46.778+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:40:46.779+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:40:46.780+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:40:57.274+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:40:57.274+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:40:57.332+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:40:57.333+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:40:57.334+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:42:04.641+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:42:04.642+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:42:04.662+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:42:04.662+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:42:04.670+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:48:14.967+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:48:14.990+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:48:15.017+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:48:15.018+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:48:15.050+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:48:15.052+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:48:15.063+03:00 DEBUG 15951 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:48:15.080+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:48:15.080+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:48:15.081+03:00 DEBUG 15951 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:48:41.083+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:48:41.086+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:48:41.092+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:48:41.093+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:48:41.094+03:00 DEBUG 15951 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:49:11.132+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:49:11.132+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:49:11.139+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:49:11.139+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:49:11.158+03:00 DEBUG 15951 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:49:52.391+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:49:52.402+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:49:52.464+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:49:52.465+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:49:52.470+03:00 DEBUG 15951 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:51:34.167+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:51:34.172+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:51:34.205+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:51:34.206+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:51:34.211+03:00 DEBUG 15951 --- [http-nio-3333-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:52:28.547+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:52:28.549+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:52:28.556+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:52:28.556+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:52:28.557+03:00 DEBUG 15951 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:53:02.722+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:53:02.723+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:53:02.728+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:53:02.728+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:53:02.730+03:00 DEBUG 15951 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:53:05.619+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-03T03:53:05.620+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-03T03:53:05.626+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:53:05.627+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c (truncated)...]
+2023-07-03T03:53:05.627+03:00 DEBUG 15951 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-03T03:53:21.874+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : DELETE "/todo/api/v1/delete/1", parameters={}
+2023-07-03T03:53:21.880+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceDeleteById(Long)
+2023-07-03T03:53:22.865+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-03T03:53:22.867+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=header 03cd7be2-bca2-4969-a117-2fbe902875c6, content=content 57bdad0a-80c8-4d01-981c- (truncated)...]
+2023-07-03T03:53:22.870+03:00 DEBUG 15951 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

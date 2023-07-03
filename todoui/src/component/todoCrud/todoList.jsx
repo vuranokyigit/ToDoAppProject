@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 
 import todoapiService from "../../service/todoapiService";
 import { useEffect } from "react";
@@ -16,14 +16,45 @@ function TodoList() {
             });
     }, []);
 
+    //console.log(todoList.push()="/todo/create");
+    const create = () => {
+        // create 
+        const newTodo = "/todo/create"; // Yeni öğe
+        setTodoList([...todoList, newTodo]);
+    };
+    const update = (id) => {
+        //update
+        todoList.push("/todo/update/" + id);
+    };
+    const view = (id) => {
+        //view
+        todoList.push(`/todo/view/${id}`);
+    };
+    const del = (id) => {
+        // delete
+        todoapiService.todoServiceDeleteById(id)
+            .then((response) => {
+                const updatedList = todoList.filter(todo => todo.id !== id);
+                setTodoList(updatedList);
+            })
+            .catch((error) => {
+                console.error("Delete failed", error);
+            });
+    };
 
     return (
         <>
             <h1 className="text-center text-primary display-5 text-uppercase">TO DO TASKs</h1>
             {/* CREATE TASK */}
-            <button className="btn btn-primary" style={{marginRight:"2rem"}}><i class="fa-solid fa-circle-plus me-3"> ADD task</i></button>
+            <button
+                className="btn btn-primary"
+                onClick={create}
+                style={{ marginRight: "2rem" }}><i class="fa-solid fa-circle-plus me-3"> ADD task</i></button>
             {/* ALL DELETE TASK */}
-            <button className="btn btn-danger"><i class="fa-solid fa-bomb">  ALL tasks delete</i></button>
+            <button
+                className="btn btn-danger"
+                onClick={del}
+            ><i class="fa-solid fa-bomb">  ALL tasks delete</i></button>
             <table className="table table-hover table-striped">
                 <thead>
                     <tr>
@@ -45,9 +76,21 @@ function TodoList() {
                                 <td>{todo.header}</td>
                                 <td>{todo.content}</td>
                                 <td>{todo.systemDate}</td>
-                                <td><i class="fa-solid fa-pen-to-square text-primary"></i></td>
-                                <td><i class="fa-solid fa-binoculars text-dark"></i></td>
-                                <td><i class="fa-solid fa-trash text-danger me-3"></i></td>
+                                <td><i class="fa-solid fa-pen-to-square text-primary"
+                                    style={{ cursor: "pointer" }}
+                                    onClick={() => update(todo.id)} ></i></td>
+                                <td><i class="fa-solid fa-binoculars text-dark"
+                                    style={{ cursor: "pointer" }}
+                                    onClick={() => view(todo.id)}></i></td>
+                                <td><i class="fa-solid fa-trash text-danger"
+                                    style={{ cursor: "pointer" }}
+                                    onClick={() => {
+                                        if (window.confirm(todo.id + "id  Sure deleted ?"))
+                                            del(todo.id)
+                                        else
+                                            window.alert("Silinmedi !!!");
+                                    } //end function
+                                    }></i></td>
                             </tr>
 
                         )//end mapping
