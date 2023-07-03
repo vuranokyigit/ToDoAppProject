@@ -28,6 +28,7 @@ public class CommandLineRunnerBean {
                 ToDoDto toDoDto = ToDoDto.builder()
                         .header("header " + UUID.randomUUID().toString())
                         .content("content " + UUID.randomUUID().toString())
+                        .checkBox(false)
                         .build();
                 toDoService.todoServiceCreate(toDoDto);
                 list.add(toDoDto);

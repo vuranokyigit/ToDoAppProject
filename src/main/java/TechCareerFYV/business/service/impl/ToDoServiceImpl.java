@@ -102,6 +102,7 @@ public class ToDoServiceImpl implements IToDoGenericService <ToDoDto, ToDoEntity
             toDoEntity.setId(id);
             toDoEntity.setHeader(todoDto.getHeader());
             toDoEntity.setContent(todoDto.getContent());
+            toDoEntity.setCheckBox((todoDto.getCheckBox()));
             iToDoRepository.save(toDoEntity);
             todoDto.setId(toDoEntity.getId());
             todoDto.setSystemDate(todoDto.getSystemDate());
@@ -150,6 +151,7 @@ public class ToDoServiceImpl implements IToDoGenericService <ToDoDto, ToDoEntity
         iToDoRepository.deleteAll();
         log.info("Deleted");
         return "Deleted";
+
     }
     @Override
     public String appInformationService(HttpServletRequest request, HttpServletResponse response) {

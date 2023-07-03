@@ -23,9 +23,9 @@ function TodoList() {
     };
     const update = (id) => {
         //update
-        todoList.push("/todo/update/" + id);
+        window.location.href ="/#/todo/update/" + id;
     };
-   
+    //DELETE BY ID
     const del = (id) => {
         // delete
         todoapiService.todoServiceDeleteById(id)
@@ -37,6 +37,41 @@ function TodoList() {
                 console.error("Delete failed", error);
             });
     };
+    //DELETE ALL
+    const deleteAll = () => {
+        todoapiService
+          .todoServiceDeleteAll()
+          .then((response) => {
+            setTodoList([]);
+          })
+          .catch((error) => {
+            console.error("Delete all failed", error);
+          });
+      };
+
+    const checkbox = (id) => {
+        const todoDto = {
+            checkBox: true,
+            content: "done" // Güncellenmiş içerik
+        };
+
+        todoapiService
+            .todoServiceUpdateById(id, todoDto)
+            .then((response) => {
+                const updatedTodo = response.data; // Güncellenmiş görevin bilgilerini al
+                const updatedList = todoList.map((todo) => {
+                    if (todo.id === updatedTodo.id) {
+                        return updatedTodo; // Güncellenmiş görevin tamamını döndür
+                    }
+                    return todo;
+                });
+                setTodoList(updatedList);
+            })
+            .catch((error) => {
+                console.error("Update failed", error);
+            });
+    };
+
 
     return (
         <>
@@ -49,7 +84,7 @@ function TodoList() {
             {/* ALL DELETE TASK */}
             <button
                 className="btn btn-danger"
-                onClick={del}
+                onClick={deleteAll}
             ><i className="fa-solid fa-bomb">  ALL tasks delete</i></button>
             <table className="table table-hover table-striped">
                 <thead>
@@ -58,6 +93,7 @@ function TodoList() {
                         <th>HEADER</th>
                         <th>CONTENT</th>
                         <th>DATE</th>
+                        <th>CHECKBOX</th>
                         <th>UPDATE</th>
                         <th>DELETE</th>
                     </tr>
@@ -71,10 +107,15 @@ function TodoList() {
                                 <td>{todo.header}</td>
                                 <td>{todo.content}</td>
                                 <td>{todo.systemDate}</td>
+                                <td><input
+                                    value={todo.id}
+                                    type="checkbox"
+                                    style={{ width: "20px", height: "20px" }}
+                                    onClick={() => checkbox(todo.id)}></input></td>
                                 <td><i className="fa-solid fa-pen-to-square text-primary"
                                     style={{ cursor: "pointer" }}
                                     onClick={() => update(todo.id)} ></i></td>
-                                
+
                                 <td><i className="fa-solid fa-trash text-danger"
                                     style={{ cursor: "pointer" }}
                                     onClick={() => {

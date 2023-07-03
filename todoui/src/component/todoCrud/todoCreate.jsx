@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import todoapiService from "../../service/todoapiService";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import { withRouter } from "react-router-dom";
+import Main from "../todocalendar/main";
 
 class TodoCreate extends Component {
   constructor(props) {
@@ -11,10 +14,13 @@ class TodoCreate extends Component {
       validationErrors: {},
       spinnerData: false,
       multipleRequest: false,
+      isCheck: false,
     };
 
     this.onChangeInputValue = this.onChangeInputValue.bind(this);
     this.todoCreateAdd = this.todoCreateAdd.bind(this);
+    this.onDateChange = this.onDateChange.bind(this); 
+    
   }
 
   onChangeInputValue(event) {
@@ -26,14 +32,18 @@ class TodoCreate extends Component {
       validationErrors: backendHandleError,
     });
   }
-
+  onDateChange(date) {
+    this.setState({ date: date });
+  }
+  //ADD TO DO
   async todoCreateAdd(event) {
-    event.preventDefault();
+    event.preventDefault();//does not work browser
 
-    const { header, content } = this.state;
+    const { header, content, date } = this.state;
     const toDoDto = {
       header,
       content,
+      date,
     };
 
     try {
@@ -68,6 +78,7 @@ class TodoCreate extends Component {
     const {
       header,
       content,
+      date,
       validationErrors,
       spinnerData,
       multipleRequest,
@@ -103,6 +114,15 @@ class TodoCreate extends Component {
                   placeholder="Enter content"
                 />
                 {contentError && <span className="error">{contentError}</span>}
+              </div>
+              <div>
+                <label htmlFor="date">Date:</label>
+                <DatePicker // Tarih seçici bileşeni
+                  id="date"
+                  name="date"
+                  selected={date} // Seçilen tarihi durumdan al
+                  onChange={this.onDateChange} // Tarih değişikliği işleyicisi
+                />
               </div>
               <button
                 className="btn btn-primary btn-block mb-4"
