@@ -835,3 +835,94 @@
 2023-07-04T11:32:43.392+03:00 DEBUG 73934 --- [http-nio-3333-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2023-07-04T11:48:20.336+03:00  WARN 73934 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m22s628ms).
 2023-07-04T11:52:19.591+03:00  WARN 73934 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=3m29s242ms).
+2023-07-04T12:08:36.543+03:00 DEBUG 73934 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/todo/api/v1/create", parameters={}
+2023-07-04T12:08:36.560+03:00 DEBUG 73934 --- [http-nio-3333-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceCreate(ToDoDto)
+2023-07-04T12:08:36.601+03:00 DEBUG 73934 --- [http-nio-3333-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ToDoDto(header=merhaba, content=ben merhaba content, checkBox=null)]
+2023-07-04T12:08:36.766+03:00 DEBUG 73934 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-04T12:08:36.767+03:00 DEBUG 73934 --- [http-nio-3333-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=merhaba, content=ben merhaba content, checkBox=null)]
+2023-07-04T12:08:36.772+03:00 DEBUG 73934 --- [http-nio-3333-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-04T12:08:36.830+03:00 DEBUG 73934 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-04T12:08:36.830+03:00 DEBUG 73934 --- [http-nio-3333-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-04T12:08:36.860+03:00 DEBUG 73934 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-04T12:08:36.862+03:00 DEBUG 73934 --- [http-nio-3333-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=qdew, content=dwedwedw, checkBox=null), ToDoDto(header=merhaba, content=ben merhaba  (truncated)...]
+2023-07-04T12:08:36.863+03:00 DEBUG 73934 --- [http-nio-3333-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-04T12:08:40.642+03:00 DEBUG 73934 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : DELETE "/todo/api/v1/delete/12", parameters={}
+2023-07-04T12:08:40.645+03:00 DEBUG 73934 --- [http-nio-3333-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceDeleteById(Long)
+2023-07-04T12:08:40.711+03:00 DEBUG 73934 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-04T12:08:40.721+03:00 DEBUG 73934 --- [http-nio-3333-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=qdew, content=dwedwedw, checkBox=null)]
+2023-07-04T12:08:40.747+03:00 DEBUG 73934 --- [http-nio-3333-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-04T12:09:31.824+03:00 DEBUG 73934 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-04T12:09:31.824+03:00 DEBUG 73934 --- [http-nio-3333-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-04T12:09:31.839+03:00 DEBUG 73934 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-04T12:09:31.839+03:00 DEBUG 73934 --- [http-nio-3333-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=merhaba, content=ben merhaba content, checkBox=null)]]
+2023-07-04T12:09:31.840+03:00 DEBUG 73934 --- [http-nio-3333-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-04T12:09:40.423+03:00 DEBUG 73934 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/find/13", parameters={}
+2023-07-04T12:09:40.426+03:00 DEBUG 73934 --- [http-nio-3333-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceFindById(Long)
+2023-07-04T12:09:40.434+03:00 DEBUG 73934 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-04T12:09:40.434+03:00 DEBUG 73934 --- [http-nio-3333-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ToDoDto(header=merhaba, content=ben merhaba content, checkBox=null)]
+2023-07-04T12:09:40.435+03:00 DEBUG 73934 --- [http-nio-3333-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-04T12:10:06.452+03:00 DEBUG 73934 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2023-07-04T12:10:06.453+03:00 DEBUG 73934 --- [http-nio-3333-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceList()
+2023-07-04T12:10:06.459+03:00 DEBUG 73934 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-04T12:10:06.460+03:00 DEBUG 73934 --- [http-nio-3333-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ToDoDto(header=merhaba, content=ben merhaba content, checkBox=null)]]
+2023-07-04T12:10:06.461+03:00 DEBUG 73934 --- [http-nio-3333-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-04T12:10:08.298+03:00 DEBUG 73934 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : PUT "/todo/api/v1/update/13", parameters={}
+2023-07-04T12:10:08.299+03:00 DEBUG 73934 --- [http-nio-3333-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#todoServiceUpdateById(Long, ToDoDto)
+2023-07-04T12:10:08.303+03:00 DEBUG 73934 --- [http-nio-3333-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ToDoDto(header=null, content=done, checkBox=true)]
+2023-07-04T12:10:08.324+03:00  WARN 73934 --- [http-nio-3333-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<?> TechCareerFYV.controller.api.impl.ToDoApiImpl.todoServiceUpdateById(java.lang.Long,TechCareerFYV.business.dto.ToDoDto): [Field error in object 'toDoDto' on field 'header': rejected value [null]; codes [NotEmpty.toDoDto.header,NotEmpty.header,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [toDoDto.header,header]; arguments []; default message [header]]; default message [Header cannot be null]] ]
+2023-07-04T12:10:08.325+03:00 DEBUG 73934 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2023-07-04T12:10:08.329+03:00 DEBUG 73934 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PUT "/error", parameters={}
+2023-07-04T12:10:08.329+03:00 DEBUG 73934 --- [http-nio-3333-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.error.CustomErrorHandleWebRequest#handleError(WebRequest)
+2023-07-04T12:10:08.333+03:00 DEBUG 73934 --- [http-nio-3333-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2023-07-04T12:10:08.335+03:00 DEBUG 73934 --- [http-nio-3333-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(status=400, error=null, message=/todo/api/v1/update/13, path=Validation failed for object= (truncated)...]
+2023-07-04T12:10:08.340+03:00 DEBUG 73934 --- [http-nio-3333-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2023-07-04T12:10:56.922+03:00 DEBUG 73934 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/all/delete", parameters={}
+2023-07-04T12:10:56.924+03:00 DEBUG 73934 --- [http-nio-3333-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to TechCareerFYV.controller.api.impl.ToDoApiImpl#allDeleteService()
+2023-07-04T12:10:56.952+03:00  INFO 73934 --- [http-nio-3333-exec-10] T.business.service.impl.ToDoServiceImpl  : Deleted
+2023-07-04T12:10:56.957+03:00 DEBUG 73934 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, application/json, application/*+json]
+2023-07-04T12:10:56.957+03:00 DEBUG 73934 --- [http-nio-3333-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Deleted"]
+2023-07-04T12:10:56.960+03:00 DEBUG 73934 --- [http-nio-3333-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-04T12:13:46.509+03:00  INFO 73934 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-07-04T12:13:46.602+03:00  INFO 73934 --- [Thread-8] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-04T12:13:46.827+03:00  INFO 73934 --- [Thread-8] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-04T12:13:46.831+03:00  INFO 73934 --- [Thread-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-04T12:13:46.876+03:00  INFO 73934 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-04T12:13:46.948+03:00  INFO 73934 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-07-04T12:13:47.002+03:00  INFO 73934 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-07-04T12:13:47.807+03:00  INFO 73934 --- [restartedMain] T.ToDoAppProjectApplication              : Starting ToDoAppProjectApplication using Java 20.0.1 with PID 73934 (/Users/fikriyigitvuranok/Downloads/ToDoAppProject/target/classes started by fikriyigitvuranok in /Users/fikriyigitvuranok/Downloads/ToDoAppProject)
+2023-07-04T12:13:47.809+03:00  INFO 73934 --- [restartedMain] T.ToDoAppProjectApplication              : The following 1 profile is active: "react"
+2023-07-04T12:13:48.785+03:00  INFO 73934 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-04T12:13:48.798+03:00  INFO 73934 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2023-07-04T12:13:49.023+03:00  INFO 73934 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3333 (http)
+2023-07-04T12:13:49.024+03:00  INFO 73934 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-04T12:13:49.024+03:00  INFO 73934 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-07-04T12:13:49.064+03:00  INFO 73934 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-04T12:13:49.065+03:00  INFO 73934 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1247 ms
+2023-07-04T12:13:49.130+03:00  INFO 73934 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-07-04T12:13:49.148+03:00  INFO 73934 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn60: url=jdbc:h2:file:./memory_persist/todo user=
+2023-07-04T12:13:49.148+03:00  INFO 73934 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-07-04T12:13:49.149+03:00  INFO 73934 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/todo'
+2023-07-04T12:13:49.168+03:00 DEBUG 73934 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-07-04T12:13:49.169+03:00 DEBUG 73934 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-07-04T12:13:49.246+03:00  INFO 73934 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-04T12:13:49.328+03:00  INFO 73934 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-04T12:13:49.544+03:00  WARN 73934 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-04T12:13:49.590+03:00 DEBUG 73934 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-04T12:13:49.595+03:00  INFO 73934 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-07-04T12:13:49.613+03:00 DEBUG 73934 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2023-07-04T12:13:49.840+03:00 DEBUG 73934 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-07-04T12:13:49.849+03:00 DEBUG 73934 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-04T12:13:50.170+03:00  INFO 73934 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-04T12:13:50.195+03:00  INFO 73934 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3333 (http) with context path ''
+2023-07-04T12:13:50.251+03:00  INFO 73934 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2023-07-04T12:13:50.251+03:00  INFO 73934 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-04T12:13:50.251+03:00  INFO 73934 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-07-04T12:13:50.262+03:00  INFO 73934 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-07-04T12:13:50.262+03:00  INFO 73934 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 66 ms
+2023-07-04T12:13:50.270+03:00  INFO 73934 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/admin'
+2023-07-04T12:13:50.282+03:00 DEBUG 73934 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2023-07-04T12:13:50.472+03:00 DEBUG 73934 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-07-04T12:13:50.486+03:00 DEBUG 73934 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-04T12:13:50.494+03:00  INFO 73934 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2023-07-04T12:13:50.505+03:00  INFO 73934 --- [restartedMain] T.ToDoAppProjectApplication              : Started ToDoAppProjectApplication in 2.891 seconds (process running for 8417.482)
+2023-07-04T12:13:50.534+03:00  INFO 73934 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

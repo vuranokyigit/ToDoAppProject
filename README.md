@@ -1,5 +1,5 @@
 
-# To Do App Full Stack
+# To Do App Full Stack Development
 
 # Abstract
 
@@ -11,8 +11,6 @@ I tried to develop a todo app project where crud operations are done with java, 
 
 UI Properties
 
-- Light/Dark Mode
-- Login & Register Section
 - Interactive Calender
 - Task Section 
 - Supportin All Platform
@@ -58,4 +56,71 @@ https://nodejs.org/en/download
   node start 
 ```
 
+# TO DO Uygulaması 
+
+# OZET
+
+Java ile crud işlemlerinin yapıldığı, h2 veritabanı ve veritabanının oluşturulduğu, tepki ve ön yüzün yazıldığı bir todo app projesi geliştirmeye çalıştım. Eksiklerim var ama gelişimim devam ediyor..
+
+## Özellikler
+Kullanıcı Arayüzü Özellikleri
+- Etkileşimli Takvim
+- Görev Bölümü
+- Tüm Platformlarda Destek
+Arka Uç Özellikleri
+- CRUD
+- i18N Dil değiştirme
+- Veritabanı Bağlantısı
+
+## Kullanılan Teknolojiler
+
+**İstemci:** React, Redux, Hooks, CSS, Bootstrap5, Javascript, XML,JAVA , SPRING BOOT, SPRING CONTROLLER, SPRING API, SPRING MVC
+
+**Sunucu:** ui: localhost:3000 , BE: localhost:3333
+
+**Veri:** H2 Veritabanı(Postman)
   
+  
+## Kurulum
+
+TERMİNALinizi açın
+
+### sürüm düğümünüzü kontrol edin
+``` bash
+   node --v
+```
+node.js'yi yüklemeniz gerekiyorsa
+https://nodejs.org/en/download
+
+``` bash
+  npm install my-project
+  cd my-project
+```
+### çalıştır
+``` bash
+    npm run start 
+```
+### başlangıç
+``` bash
+   node start
+```
+
+## ScreenShots
+
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/qzm5jdf.png)
+
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/tbp9r1u.png)
+
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/psc5cge.png)
+
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/do0ibi9.png)
+
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/j185lxk.png)
+
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/ayh8pwb.png)
+
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/m5jebia.png)
+
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/fm29h0r.png)
+
+
