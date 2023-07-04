@@ -107,7 +107,7 @@ https://nodejs.org/en/download
 
 ## ScreenShots
 
-![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/qzm5jdf.png)
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/4x8d4wh.png)
 
 ![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/tbp9r1u.png)
 

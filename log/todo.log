@@ -926,3 +926,4 @@
 2023-07-04T12:13:50.494+03:00  INFO 73934 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
 2023-07-04T12:13:50.505+03:00  INFO 73934 --- [restartedMain] T.ToDoAppProjectApplication              : Started ToDoAppProjectApplication in 2.891 seconds (process running for 8417.482)
 2023-07-04T12:13:50.534+03:00  INFO 73934 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-07-04T12:25:29.932+03:00  WARN 73934 --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=1m40s607ms).
