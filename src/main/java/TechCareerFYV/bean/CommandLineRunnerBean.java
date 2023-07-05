@@ -19,7 +19,7 @@ import java.util.UUID;
 public class CommandLineRunnerBean {
 
     private final ToDoServiceImpl toDoService;
-
+//commandline runner da parametre olarak olusturabilirsin
     @Bean
     public CommandLineRunner commandLineRunnerMethod(){
         return args -> {

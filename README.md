@@ -58,7 +58,7 @@ https://nodejs.org/en/download
 
 # TO DO Uygulaması 
 
-# OZET
+# SOYUT
 
 Java ile crud işlemlerinin yapıldığı, h2 veritabanı ve veritabanının oluşturulduğu, tepki ve ön yüzün yazıldığı bir todo app projesi geliştirmeye çalıştım. Eksiklerim var ama gelişimim devam ediyor..
 
