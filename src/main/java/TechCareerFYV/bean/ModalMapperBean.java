@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 public class ModalMapperBean {
 
     @Bean
-    public ModelMapper modelMapperMethod(){
+    public ModelMapper modelMapperMethod() {
         return  new  ModelMapper();
     }
 }

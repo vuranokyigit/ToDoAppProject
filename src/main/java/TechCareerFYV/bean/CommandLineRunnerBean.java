@@ -24,15 +24,7 @@ public class CommandLineRunnerBean {
     public CommandLineRunner commandLineRunnerMethod(){
         return args -> {
             List<ToDoDto> list = new ArrayList<>();
-            for (int i = 1; i <= 10; i++) {
-                ToDoDto toDoDto = ToDoDto.builder()
-                        .header("header " + UUID.randomUUID().toString())
-                        .content("content " + UUID.randomUUID().toString())
-                        .checkBox(false)
-                        .build();
-                toDoService.todoServiceCreate(toDoDto);
-                list.add(toDoDto);
-            }
+            //we can provide this area for default coming data to database
         }; //end args
     } // end command Line Runner Method
 } // end class

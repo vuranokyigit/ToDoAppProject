@@ -84,7 +84,14 @@ function TodoList() {
             {/* ALL DELETE TASK */}
             <button
                 className="btn btn-danger"
-                onClick={deleteAll}
+                onClick={() => {
+                    if (window.confirm("Do you want to delete all ?"))
+                        deleteAll()
+                        
+                    else
+                        window.alert("Not Deleted ");
+                }
+             } //end function
             ><i className="fa-solid fa-bomb">  ALL tasks delete</i></button>
             <table className="table table-hover table-striped">
                 <thead>
@@ -101,6 +108,7 @@ function TodoList() {
                 <tbody>
 
                     {
+                        //reusibility check koy
                         todoList.map((todo) =>
                             <tr key={todo.id}>
                                 <td>{todo.id}</td>
@@ -119,10 +127,11 @@ function TodoList() {
                                 <td><i className="fa-solid fa-trash text-danger"
                                     style={{ cursor: "pointer" }}
                                     onClick={() => {
-                                        if (window.confirm(todo.id + "id  Sure deleted ?"))
+                                        if (window.confirm("Do you want to delete as id: "+ todo.id + " ?"))
                                             del(todo.id)
+                                            
                                         else
-                                            window.alert("Not Deleted !!!");
+                                            window.alert("Not Deleted  id: "+ todo.id);
                                     } //end function
                                     }></i></td>
                             </tr>
