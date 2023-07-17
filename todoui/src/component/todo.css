@@ -127,12 +127,14 @@ img:hover {
     -webkit-box-orient: vertical;
 }
 /* ##################################################### */
-/* ### MAIN  ###*/
+/* ### MAIN, CALENDAR  ###*/
 
 .main .react-calendar{
     margin-inline: auto;
     background-color: rgb(105, 102, 216);
-    border-radius: 10px;
+    border-radius: 15px;
+    width: 80%;
+    height: 320px;
 
 }
 /* ##################################################### */
@@ -182,7 +184,7 @@ img:hover {
     flex-direction: row;
     display: flex;
     cursor: pointer;
-    justify-content: space-between;
+    justify-content: inherit;
 
   }
   

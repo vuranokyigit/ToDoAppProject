@@ -4,6 +4,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { withRouter } from "react-router-dom";
 
+
 class TodoUpdate extends Component {
     constructor(props) {
         super(props);
@@ -16,20 +17,16 @@ class TodoUpdate extends Component {
             isCheck: false,
             id: this.props.match.params.id,
         };
-
         this.onChangeInputValue = this.onChangeInputValue.bind(this);
         this.todoUpdate = this.todoUpdate.bind(this);
         this.onDateChange = this.onDateChange.bind(this);
-
     }
     //cdm-first find data
     componentDidMount() {
         const id = this.props.match.params.id; // Alınan ID'yi kullanarak doğru kaynağı bulmak için
-      
         todoapiService.todoServiceFindById(id)
           .then((response) => {
-            const findTodoData = response.data;
-      
+            const findTodoData = response.data;     
             this.setState({
               header: findTodoData.header,
               content: findTodoData.content,
@@ -39,9 +36,6 @@ class TodoUpdate extends Component {
             console.log(error);
           });
       }
-      
-
-
     onChangeInputValue(event) {
         const { name, value } = event.target;
         const backendHandleError = { ...this.state.validationErrors };
@@ -64,13 +58,11 @@ class TodoUpdate extends Component {
             content,
             date,
         };
-
         try {
             this.setState({
                 spinnerData: true,
                 multipleRequest: false,
             });
-
             const response = await todoapiService.todoServiceUpdateById(this.state.id, toDoDto);
 
             if (response.status === 200) {
@@ -92,7 +84,6 @@ class TodoUpdate extends Component {
             this.setState({ spinnerData: false, multipleRequest: false });
         }
     }
-
     render() {
         const {
             header,
@@ -104,7 +95,6 @@ class TodoUpdate extends Component {
             id,
         } = this.state;
         const { header: headerError, content: contentError } = validationErrors;
-
         return (
             <>
                 <div className="todo-create">
@@ -165,5 +155,4 @@ class TodoUpdate extends Component {
         );
     }
 }
-
 export default withRouter(TodoUpdate);

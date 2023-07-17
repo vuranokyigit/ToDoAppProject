@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-
 import todoapiService from "../../service/todoapiService";
 import { useEffect } from "react";
-
 function TodoList() {
     const [todoList, setTodoList] = useState([]);
 
@@ -15,16 +13,14 @@ function TodoList() {
                 console.error("List failed", error);
             });
     }, []);
-
-    //console.log(todoList.push()="/todo/create");
     const create = () => {
         // create 
         window.location.href = "/#/todo/create";
     };
-    const update = (id) => {
-        //update
+    //Update by id
+    const update = (id) => { 
         window.location.href ="/#/todo/update/" + id;
-    };
+    }    
     //DELETE BY ID
     const del = (id) => {
         // delete
@@ -71,6 +67,8 @@ function TodoList() {
                 console.error("Update failed", error);
             });
     };
+    
+    
 
 
     return (
@@ -106,7 +104,6 @@ function TodoList() {
                     </tr>
                 </thead>
                 <tbody>
-
                     {
                         //reusibility check koy
                         todoList.map((todo) =>
@@ -122,23 +119,19 @@ function TodoList() {
                                     onClick={() => checkbox(todo.id)}></input></td>
                                 <td><i className="fa-solid fa-pen-to-square text-primary"
                                     style={{ cursor: "pointer" }}
-                                    onClick={() => update(todo.id)} ></i></td>
-
+                                    onClick={() => update(todo.id)} ></i></td>                     
                                 <td><i className="fa-solid fa-trash text-danger"
                                     style={{ cursor: "pointer" }}
                                     onClick={() => {
                                         if (window.confirm("Do you want to delete as id: "+ todo.id + " ?"))
-                                            del(todo.id)
-                                            
+                                            del(todo.id)                                         
                                         else
                                             window.alert("Not Deleted  id: "+ todo.id);
                                     } //end function
                                     }></i></td>
                             </tr>
-
                         )//end mapping
                     }
-
                 </tbody>
             </table>
         </>
