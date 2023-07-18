@@ -16,13 +16,6 @@ abstract public class AuditingAwareBaseDto implements Serializable {
     //Serializing
 public static final Long serialVersionUID = 1L;
 
-//    public Date getUpdatedDate() {
-//        return updatedDate;
-//    }
-//
-//    public Date getCreatedDate() {
-//        return createdDate;
-//    }
 
     //Global
     private Long id;//id

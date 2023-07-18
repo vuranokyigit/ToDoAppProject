@@ -1,6 +1,7 @@
 package TechCareerFYV.business.service;
 
 import TechCareerFYV.business.dto.ToDoDto;
+import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -22,6 +23,9 @@ public interface IToDoGenericService <D,E> extends IProfileApp {
     public D todoServiceDeleteById(Long id);
     // Update
     public D todoServiceUpdateById(Long id,  ToDoDto toDoDto);
+
+    @Transactional
+    ToDoDto todoServiceCheckBox(Long id);
 
     //######Pageable#######
     //list pageable structure

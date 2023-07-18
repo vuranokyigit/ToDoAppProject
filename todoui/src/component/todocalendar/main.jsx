@@ -12,27 +12,35 @@ import 'react-calendar/dist/Calendar.css';
 import todoapiService from "../../service/todoapiService";
 import TodoCreate from "../todoCrud/todoCreate";
 
-function Main() {
-  const [date, setDate] = useState(new Date());
-  const [showTodoTable, setShowTodoTable] = useState(false);
 
-  const create = () => {
+
+const  Main = (props) => {
+  const [showTodoTable, setShowTodoTable] = useState(false);
+  const [selectedDate, setSelectedDate] = useState(new Date());
+  
+
+  const create = (dClick) => {
+    window.location.href = "/#/todo/create";
+    setSelectedDate(dClick);
     setShowTodoTable(true);
+    
   };
 
   return (
     <>
       <div className="main">
-        <h1 className="header">TO DO CALENDAR</h1>
+        <h1 className="header">TO DO CALENDAR </h1>
         <div className="calendar-container">
-          <Calendar onChange={create} value={date} />
+          <Calendar onChange={create} type={selectedDate} />
         </div>
-        {showTodoTable && (
+        {showTodoTable &&  (
           <div className="text-center">
-            <TodoCreate date={date} />
+            <TodoCreate date={selectedDate} /> 
+            <h1>{selectedDate.toString()}</h1>
           </div>
         )}
       </div>
+      
     </>
   );
 }

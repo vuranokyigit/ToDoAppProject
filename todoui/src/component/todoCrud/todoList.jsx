@@ -45,27 +45,8 @@ function TodoList() {
           });
       };
 
-    const checkbox = (id) => {
-        const todoDto = {
-            checkBox: true,
-            content: "done" // Güncellenmiş içerik
-        };
-
-        todoapiService
-            .todoServiceUpdateById(id, todoDto)
-            .then((response) => {
-                const updatedTodo = response.data; // Güncellenmiş görevin bilgilerini al
-                const updatedList = todoList.map((todo) => {
-                    if (todo.id === updatedTodo.id) {
-                        return updatedTodo; // Güncellenmiş görevin tamamını döndür
-                    }
-                    return todo;
-                });
-                setTodoList(updatedList);
-            })
-            .catch((error) => {
-                console.error("Update failed", error);
-            });
+    const checkbox = () => {
+        
     };
     
     

@@ -29,10 +29,10 @@ class Navbar extends Component {
           <div className="container-fluid">
             <div className="togglePage">
               <div className="home" onClick={this.handleClickHome}>
-                <i class="fa-solid fa-house text-light"></i>
+                <i className="fa-solid fa-house text-light"></i>
               </div>
               <div className="list" onClick={this.handleClickList}>
-                <i class="fa-solid fa-list text-light"></i>
+                <i className="fa-solid fa-list text-light"></i>
               </div>
             </div>
           </div>

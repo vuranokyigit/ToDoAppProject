@@ -15,38 +15,42 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.webjars.NotFoundException;
+
 import java.util.ArrayList;
 import java.util.List;
-//Lombok
-@RequiredArgsConstructor//injection
+
+// Lombok
+@RequiredArgsConstructor // Injection
 @Log4j2
-//Asil is yukunu yapan yer
+// Asil is yukunu yapan yer
 @Service
-public class ToDoServiceImpl implements IToDoGenericService <ToDoDto, ToDoEntity>{
-    //final: 1-)field: constant 2-)To method: there is no override  3-)class extends not permiss
-    //final:field verdiginizde zorunlu olarak biz constructor olusmasini istiyoruz
-    private final ModalMapperBean modalMapperBean;
-    //Database
-    private final IToDoRepository iToDoRepository;
-    //###########Model Mapper#########///
+public class ToDoServiceImpl implements IToDoGenericService<ToDoDto, ToDoEntity> {
+    private final ModalMapperBean modalMapperBean; // Dependency Injection
+    private final IToDoRepository iToDoRepository; // Database
+
+    // Model Mapper
     @Override
     public ToDoDto EntityToDto(ToDoEntity toDoEntity) {
-        return modalMapperBean.modelMapperMethod().map(toDoEntity, ToDoDto.class);//entity to dto
+        return modalMapperBean.modelMapperMethod().map(toDoEntity, ToDoDto.class); // Entity to DTO
     }
+
     @Override
     public ToDoEntity DtoToEntity(ToDoDto toDoDto) {
-        return modalMapperBean.modelMapperMethod().map(toDoDto, ToDoEntity.class);//dto to entity
+        return modalMapperBean.modelMapperMethod().map(toDoDto, ToDoEntity.class); // DTO to Entity
     }
-    //###########Crud#########///
-    //Create
-    @Transactional //Create, Delete, Update
+
+    // CRUD
+
+    // Create
+    @Transactional // Create, Delete, Update
     @Override
     public ToDoDto todoServiceCreate(ToDoDto toDoDto) {
         if (toDoDto != null) {
-            //Save
+            // Save
             ToDoEntity toDoEntityModelSaver = DtoToEntity(toDoDto);
             ToDoEntity toDoEntity = iToDoRepository.save(toDoEntityModelSaver);
-            //After save
+
+            // After save
             toDoDto.setId(toDoEntity.getId());
             toDoDto.setSystemDate(toDoDto.getSystemDate());
         } else if (toDoDto == null) {
@@ -54,105 +58,116 @@ public class ToDoServiceImpl implements IToDoGenericService <ToDoDto, ToDoEntity
         }
         return toDoDto;
     }
-    //List
+
+    // List
     @Override
     public List<ToDoDto> todoServiceList() {
-        //elemanlarin sirali gecisini sagla
-        Iterable<ToDoEntity> toDoEntityIterable=iToDoRepository.findAll();
+        Iterable<ToDoEntity> toDoEntityIterable = iToDoRepository.findAll();
         List<ToDoDto> list = new ArrayList<>();
-        //her bir elemana for ile eris
-        for (ToDoEntity entity: toDoEntityIterable) {
+
+        for (ToDoEntity entity : toDoEntityIterable) {
             ToDoDto toDoDto = EntityToDto(entity);
             list.add(toDoDto);
         }
         return list;
     }
-    //Find
+
+    // Find
     @Override
     public ToDoDto todoServiceFindById(Long id) {
-        ToDoEntity toDoEntity=null;
-        if (id!=null){
-             toDoEntity= iToDoRepository.findById(id).orElseThrow(
-                    ()->{
-                        return new BadRequestException((id+ "nolu id bulunamadi"));
-                    }//arrow function
-            );//optional istedigi icin orElseThrow() from optional lib. eklemesi yaptik
-            //orElseThrow()-> veri varsa veriyi yoksa belirledigim throwu gonder
-        }else if (id==null){
-            throw new BadRequestException(id+" ToDoDto is null");
+        ToDoEntity toDoEntity = null;
+        if (id != null) {
+            toDoEntity = iToDoRepository.findById(id).orElseThrow(() ->
+                    new BadRequestException(id + " nolu id bulunamadi")
+            );
+        } else if (id == null) {
+            throw new BadRequestException("ToDoDto is null");
         }
         return EntityToDto(toDoEntity);
     }
-    //Delete
-    @Transactional //Create, Delete, Update
+
+    // Delete
+    @Transactional // Create, Delete, Update
     @Override
     public ToDoDto todoServiceDeleteById(Long id) {
-        //todoServiceFindById(Long id)->ilgili id yi yazdigimizda bize id donduruyor
-         ToDoDto toDoDtoFindForDelete= todoServiceFindById(id);
-         ToDoEntity toDoEntity =DtoToEntity(toDoDtoFindForDelete);
-         iToDoRepository.delete(toDoEntity);
+        ToDoDto toDoDtoFindForDelete = todoServiceFindById(id);
+        ToDoEntity toDoEntity = DtoToEntity(toDoDtoFindForDelete);
+        iToDoRepository.delete(toDoEntity);
         return toDoDtoFindForDelete;
     }
-    //Update
-    @Transactional //Create, Delete, Update
+
+    // Update
+    @Transactional // Create, Delete, Update
     @Override
-    public ToDoDto todoServiceUpdateById(Long id,  ToDoDto  todoDto) {
-        ToDoEntity toDoEntity =DtoToEntity(todoServiceFindById(id));
-        if (toDoEntity!=null){
+    public ToDoDto todoServiceUpdateById(Long id, ToDoDto todoDto) {
+        ToDoEntity toDoEntity = DtoToEntity(todoServiceFindById(id));
+        if (toDoEntity != null) {
             toDoEntity.setId(id);
             toDoEntity.setHeader(todoDto.getHeader());
             toDoEntity.setContent(todoDto.getContent());
-            toDoEntity.setCheckBox((todoDto.getCheckBox()));
             iToDoRepository.save(toDoEntity);
             todoDto.setId(toDoEntity.getId());
             todoDto.setSystemDate(todoDto.getSystemDate());
         }
         return EntityToDto(toDoEntity);
     }
-    //###########Pageable#########///
+
+    @Override
+    public ToDoDto todoServiceCheckBox(Long id) {
+        return null;
+    }
+
+
+    // Pageable
+
     @Override
     public List<ToDoDto> todoServiceAllList() {
-        Iterable<ToDoEntity> toDoEntityPage=iToDoRepository.findAll();
+        Iterable<ToDoEntity> toDoEntityPage = iToDoRepository.findAll();
         List<ToDoDto> list = new ArrayList<>();
-        //her bir elemana for ile eris
-        for (ToDoEntity entity: toDoEntityPage){
+
+        for (ToDoEntity entity : toDoEntityPage) {
             ToDoDto toDoDto = EntityToDto(entity);
             list.add(toDoDto);
         }
-        //listi dondur
+
         return list;
     }
+
     @Override
     public Page<ToDoEntity> todoServicePagination(int currentPage, int pageSize) {
         return null;
     }
+
     @Override
     public Page<ToDoEntity> todoServicePagination(Pageable pageable, ToDoDto toDoDto) {
         return null;
     }
-    //###########Profile#########///
-    //Add multi data
+
+    // Profile
+
     @Override
     public List<ToDoDto> speedDataService() {
         List<ToDoDto> list = new ArrayList<>();
-        for (int i=1; i<=10; i++){
+
+        for (int i = 1; i <= 10; i++) {
             ToDoDto toDoDto = ToDoDto.builder()
-                    .header("header "+i)
-                    .content("content "+i)
+                    .header("header " + i)
+                    .content("content " + i)
                     .build();
             todoServiceCreate(toDoDto);
             list.add(toDoDto);
         }
+
         return list;
     }
-    //Delete multi data
+
     @Override
     public String allDeleteService() {
         iToDoRepository.deleteAll();
         log.info("Deleted");
         return "Deleted";
-
     }
+
     @Override
     public String appInformationService(HttpServletRequest request, HttpServletResponse response) {
         String URIInfo = request.getRequestURI();

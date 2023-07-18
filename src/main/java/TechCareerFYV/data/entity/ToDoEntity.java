@@ -24,6 +24,6 @@ public class ToDoEntity extends BaseEntity implements Serializable {
     @Column(name = "content",columnDefinition = "varchar(255) default 'content CANNOT BE NULL'")
     private String content;
     //CHECKBOX
-   private  Boolean checkBox;
+
 
 }

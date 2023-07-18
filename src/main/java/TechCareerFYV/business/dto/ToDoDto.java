@@ -22,5 +22,5 @@ public class ToDoDto extends AuditingAwareBaseDto implements Serializable {
     @NotEmpty(message = "{todo.content.validation.constraints.NotNull.message}")
     @Size(max = 50, message = "{todo.content.least.validation.constraints.NotNull.message}")
     private String content;
-    private Boolean checkBox;
+
 }
