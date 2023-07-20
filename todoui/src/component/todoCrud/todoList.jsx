@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import todoapiService from "../../service/todoapiService";
 import { useEffect } from "react";
+
 function TodoList() {
     const [todoList, setTodoList] = useState([]);
 
@@ -44,10 +45,27 @@ function TodoList() {
             console.error("Delete all failed", error);
           });
       };
-
-    const checkbox = () => {
-        
-    };
+      //CHECK BOX 
+    const [options ,setOptions] = useState(true);
+    const checkboxChange = (id) => {
+        setOptions(!options);
+        if (options === true) {
+          // Checkbox is checked, üstü çizili stili uygula
+          const updatedTodoList = todoList.map((todo) =>
+            todo.id === id ? { ...todo, isChecked: true } : todo
+          );
+          setTodoList(updatedTodoList);
+          console.log(updatedTodoList);
+        } else {
+          // Checkbox is unchecked, üstü çizili stili kaldır
+          const updatedTodoList = todoList.map((todo) =>
+            todo.id === id ? { ...todo, isChecked: false } : todo
+          );
+          setTodoList(updatedTodoList);
+          console.log(updatedTodoList);
+        }
+      };
+      
     
     
 
@@ -88,16 +106,17 @@ function TodoList() {
                     {
                         //reusibility check koy
                         todoList.map((todo) =>
-                            <tr key={todo.id}>
+                            <tr key={todo.id}
+                            style={todo.isChecked ? {textDecoration : "line-through"}: null}>
                                 <td>{todo.id}</td>
                                 <td>{todo.header}</td>
                                 <td>{todo.content}</td>
                                 <td>{todo.systemDate}</td>
                                 <td><input
-                                    value={todo.id}
+                                    value={todo.isChecked}
                                     type="checkbox"
                                     style={{ width: "20px", height: "20px" }}
-                                    onClick={() => checkbox(todo.id)}></input></td>
+                                    onChange={() => checkboxChange(todo.id)}></input></td>
                                 <td><i className="fa-solid fa-pen-to-square text-primary"
                                     style={{ cursor: "pointer" }}
                                     onClick={() => update(todo.id)} ></i></td>                     
