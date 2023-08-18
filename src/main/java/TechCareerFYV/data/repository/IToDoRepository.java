@@ -1,5 +1,4 @@
 package TechCareerFYV.data.repository;
-//gerekli mi bi bak buraya!!!!!!
 import TechCareerFYV.data.entity.ToDoEntity;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

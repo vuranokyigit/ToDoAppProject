@@ -11,7 +11,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-//Entity required!!
 @Entity
 @Table(name = "todo")
 public class ToDoEntity extends BaseEntity implements Serializable {

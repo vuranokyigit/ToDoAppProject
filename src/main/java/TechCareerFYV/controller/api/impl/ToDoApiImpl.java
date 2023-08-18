@@ -4,7 +4,6 @@ import TechCareerFYV.business.dto.ToDoDto;
 import TechCareerFYV.business.service.IToDoGenericService;
 import TechCareerFYV.controller.api.IToDoGenericApi;
 import TechCareerFYV.error.ApiResult;
-import TechCareerFYV.exception.BadRequestException;
 import TechCareerFYV.util.ReactURL;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -93,7 +92,7 @@ public class ToDoApiImpl implements IToDoGenericApi<ToDoDto> {
         }if (id==0){
             log.error("ToDo api 0 badrequest geldi");
             //int status, String error, String message, String path
-            apiResult = new ApiResult(400, "bad Request", " bad Request", "/blog/api/v1/find/0");
+            apiResult = new ApiResult(400, "bad Request", " bad Request", "/todo/api/v1/find/0");
             return ResponseEntity.ok(apiResult);
         }
         return ResponseEntity.ok((ToDoDto) iToDoGenericService.todoServiceFindById(id));
@@ -110,7 +109,6 @@ public class ToDoApiImpl implements IToDoGenericApi<ToDoDto> {
             @PathVariable(name = "id", required = false) Long id,
             @Valid @RequestBody ToDoDto toDoDto) {
         toDoDto.setId(id);
-        System.out.println("******************");
         return ResponseEntity.ok(iToDoGenericService.todoServiceUpdateById(id,toDoDto));
     }
 }

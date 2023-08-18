@@ -25,6 +25,7 @@ public class CommandLineRunnerBean {
         return args -> {
             List<ToDoDto> list = new ArrayList<>();
             //we can provide this area for default coming data to database
+            toDoService.speedDataService();
         }; //end args
     } // end command Line Runner Method
 } // end class

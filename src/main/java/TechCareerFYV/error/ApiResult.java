@@ -25,8 +25,6 @@ public class ApiResult {
     private  String path;
     private Date createdDate;
     private Map<String, String> validationErrors;
-    public ApiResult(){
-    }
     public ApiResult(int status, String error, String message, String path){
         this.status = status;
         this.error = error;

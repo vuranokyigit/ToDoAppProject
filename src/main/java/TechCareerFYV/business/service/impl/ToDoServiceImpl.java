@@ -8,6 +8,7 @@ import TechCareerFYV.data.repository.IToDoRepository;
 import TechCareerFYV.exception.BadRequestException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.transaction.SystemException;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -20,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 // Lombok
+
 @RequiredArgsConstructor // Injection
 @Log4j2
 // Asil is yukunu yapan yer
@@ -47,8 +49,10 @@ public class ToDoServiceImpl implements IToDoGenericService<ToDoDto, ToDoEntity>
     public ToDoDto todoServiceCreate(ToDoDto toDoDto) {
         if (toDoDto != null) {
             // Save
-            ToDoEntity toDoEntityModelSaver = DtoToEntity(toDoDto);
-            ToDoEntity toDoEntity = iToDoRepository.save(toDoEntityModelSaver);
+            System.out.println(toDoDto.getContent());
+            ToDoEntity toDoEntity = iToDoRepository.save( DtoToEntity(toDoDto));
+            System.out.println(toDoEntity.getContent() + "save 2. level");
+
 
             // After save
             toDoDto.setId(toDoEntity.getId());
